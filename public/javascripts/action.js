@@ -9,27 +9,31 @@ function blinkingCursor() { // blinking cursor
         cont.text(cont.text() + "|")// else write it
 }
 
-function write(str, color) {
+var br = 0;
+function write(value, color) {
 
+    var str = String.fromCharCode(value.which);
     var $console = $("#console");
     var cont = $("#cursor");
+    if (value.which == 13) {
+        for (var i = 0; i < br; i++)
+            $console.html($console.html() + "<br>");
+        br++;
+    }
     if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|") // if last char is the cursor
         $("#cursor").html($("#cursor").html().substring(0, cont.length - 1)); // remove it
-    if (str != "\n")
-        $console.text(($console.text() + str));
-    else
-        $console.html($console.html() + "<\br>");
+    $console.text(($console.text() + str));
     $console.html($console.html() + "<span id='cursor'>|</span>");
     console.log(str);
 }
 
 
 $(document).keypress(function (e) {
-     if (String.fromCharCode(e.which) == "\n")
+     if (e.which == 13)
         function execute() {
 
         }
-    write(String.fromCharCode(e.which));
+    write(e);
 
 })
 setInterval(blinkingCursor, 1000);
