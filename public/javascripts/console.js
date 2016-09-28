@@ -1,6 +1,7 @@
 /**
  * Created by yohann on 28/09/2016.
  */
+
 function blinkingCursor() { // blinking cursor
     var cont = $("#cursor");
     if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|") // if last char is the cursor
@@ -25,11 +26,8 @@ function write(value, color) {
 
 
 $(document).keypress(function (e) {
-     if (e.which == 13)
-        function execute() {
-
-        }
+    if (e.which == 13)
+        execute(""); //TODO put the stored command as parameter
     write(e);
-
-})
+});
 setInterval(blinkingCursor, 1000);
