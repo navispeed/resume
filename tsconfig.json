@@ -1,0 +1,10 @@
+{
+  "command" : {
+    "cd " : {},
+    "ls" : {},
+    "man" : {},
+    "sendmail" : {},
+    "shutdown" : {},
+    "github" : {}
+  }
+}
