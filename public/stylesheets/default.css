@@ -4,10 +4,8 @@ body {
 .console {
     font-family: courier, monospace;
     color: #fff;
-    width:750px;
     margin-left:10px;
-    margin-right:auto;
-    margin-top:100px;
+    margin-top:10px;
     font-size:14px;
 }
 #cursor {
@@ -17,13 +15,4 @@ body {
 }
 .name {
     color: #0bc;
-}
-#a {
-    color: #0f0;
-}
-#c {
-    color: #0bc;
-}
-#b {
-    color: #ff0096;
 }
