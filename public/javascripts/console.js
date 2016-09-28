@@ -26,8 +26,13 @@ function write(value, color) {
 
 
 $(document).keypress(function (e) {
-    if (e.which == 13)
-        execute(""); //TODO put the stored command as parameter
+    switch (e.which) {
+        case 13:
+            execute(""); //TODO put the stored command as parameter
+            break;
+        //TODO add \r case here
+        default:
+    }
     write(e);
 });
 setInterval(blinkingCursor, 1000);

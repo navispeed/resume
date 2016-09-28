@@ -1,49 +1,52 @@
-[
-  {
-    "name": "bin",
-    "content": [
-      {
-        "name": "cd",
-        "permission": 7
-      },
-      {
-        "name": "ls",
-        "permission": 7
-      },
-      {
-        "name": "help",
-        "permission": 7
-      },
-      {
-        "name": "author",
-        "permission": 7
-      },
-      {
-        "name": "sendmail",
-        "permission": 7
-      },
-      {
-        "name": "poweroff",
-        "permission": 7
-      },
-      {
-        "name": "github",
-        "permission": 7
-      }
-    ]
-  },
-  {
-    "name": "home",
-    "content": [
-      {
-        "name": "user",
-        "content": [
-          {
-            "name": "me.ascii",
-            "permission:": 1
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "name": "",
+  "content": [
+    {
+      "name": "bin",
+      "content": [
+        {
+          "name": "cd",
+          "permission": 7
+        },
+        {
+          "name": "ls",
+          "permission": 7
+        },
+        {
+          "name": "help",
+          "permission": 7
+        },
+        {
+          "name": "author",
+          "permission": 7
+        },
+        {
+          "name": "sendmail",
+          "permission": 7
+        },
+        {
+          "name": "poweroff",
+          "permission": 7
+        },
+        {
+          "name": "github",
+          "permission": 7
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "content": [
+        {
+          "name": "user",
+          "content": [
+            {
+              "name": "me.ascii",
+              "permission:": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
