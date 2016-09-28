@@ -34,6 +34,7 @@ function execute(str) {
     name = $actualLine.text().split(":")[1];
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
+
 }
 
 function carriageReturn() {
@@ -50,7 +51,6 @@ $(document).keydown(function (e) {
         case 8:
             carriageReturn()
             break;
-        //TODO add \r case here
         default:
             write(String.fromCharCode(e.which));
     }
