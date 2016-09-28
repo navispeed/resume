@@ -10,17 +10,24 @@ function blinkingCursor() { // blinking cursor
         cont.text(cont.text() + "|")// else write it
 }
 
-var br = 0;
+var lineNumber=1;
 function write(value, color) {
 
     var str = String.fromCharCode(value.which);
-    var $console = $("#console");
+    var $actualLine = $("#line" + lineNumber);
     var cont = $("#cursor");
     if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|") // if last char is the cursor
         $("#cursor").html($("#cursor").html().substring(0, cont.length - 1)); // remove it
-    $console.html($console.html() + "<br>");
-     $console.text(($console.text() + str));
-    $console.html($console.html() + "<span id='cursor'>|</span>");
+     if (value.which == 13)
+     {
+         lineNumber++;
+         $actualLine.text(($actualLine.text() + str));
+         $("#console").append("<br>"+ "<span class='name'> User@DESKTOP-5VL27MA: </span>" + "<text id=" +  "line" + lineNumber + "></text>")
+     }
+     else {
+         $actualLine.text(($actualLine.text() + str));
+         $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
+     }
     console.log(str);
 }
 

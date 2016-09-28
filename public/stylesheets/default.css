@@ -15,9 +15,8 @@ body {
     background-color: white;
     text-decoration-color: white;
 }
-a {
+.name {
     color: #0bc;
-    text-decoration: none;
 }
 #a {
     color: #0f0;
