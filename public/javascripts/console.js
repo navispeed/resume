@@ -2,44 +2,57 @@
  * Created by yohann on 28/09/2016.
  */
 
-function blinkingCursor() { // blinking cursor
+var lineNumber = 1;
+var name = "";
+
+function blinkingCursor() {
     var cont = $("#cursor");
-    if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|") // if last char is the cursor
-        $("#cursor").html($("#cursor").html().substring(0, cont.length - 1)); // remove it
+    if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|")
+        $("#cursor").html($("#cursor").html().substring(0, cont.length - 1));
     else
-        cont.text(cont.text() + "|")// else write it
+        cont.text(cont.text() + "|");
 }
 
-var lineNumber=1;
-function write(value, color) {
-
-    var str = String.fromCharCode(value.which);
-    var $actualLine = $("#line" + lineNumber);
+function extracted() {
     var cont = $("#cursor");
-    if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|") // if last char is the cursor
-        $("#cursor").html($("#cursor").html().substring(0, cont.length - 1)); // remove it
-     if (value.which == 13)
-     {
-         lineNumber++;
-         $actualLine.text(($actualLine.text() + str));
-         $("#console").append("<br>"+ "<span class='name'> User@DESKTOP-5VL27MA: </span>" + "<text id=" +  "line" + lineNumber + "></text>")
-     }
-     else {
-         $actualLine.text(($actualLine.text() + str));
-         $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
-     }
-    console.log(str);
+    if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|")
+        $("#cursor").html($("#cursor").html().substring(0, cont.length - 1));
+}
+function write(str, color) {
+
+    var $actualLine = $("#line" + lineNumber);
+    extracted();
+    $actualLine.text(($actualLine.text() + str));
+    $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
 }
 
+function execute(str) {
+    var $actualLine = $("#line" + lineNumber);
+    lineNumber++;
+    extracted();
+    if (name == "")
+    name = $actualLine.text().split(":")[1];
+    $actualLine.text(($actualLine.text() + str));
+    $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
+}
 
-$(document).keypress(function (e) {
+function carriageReturn() {
+    var actualLine = $("#line" + lineNumber);
+    actualLine.text(actualLine.text().substring(0, actualLine.text().length - 1)); // remove it
+    actualLine.html(actualLine.html() + "<span id='cursor'>|</span>");
+}
+
+$(document).keydown(function (e) {
     switch (e.which) {
         case 13:
-            execute(""); //TODO put the stored command as parameter
+            execute(String.fromCharCode(e.which)); //TODO put the stored command as parameter
+            break;
+        case 8:
+            carriageReturn()
             break;
         //TODO add \r case here
         default:
+            write(String.fromCharCode(e.which));
     }
-    write(e);
 });
 setInterval(blinkingCursor, 1000);
