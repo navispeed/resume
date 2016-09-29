@@ -20,8 +20,11 @@ function extracted() {
 }
 
 function write(str, color) {
-    console.log("write(str:" + str + ")");
     var $actualLine = $("#line" + lineNumber);
+    if ($actualLine[0] == undefined) {
+        $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
+        $actualLine = $("#line" + (lineNumber));
+    }
     extracted();
     $actualLine.text(($actualLine.text() + str));
     $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
