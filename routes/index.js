@@ -4,8 +4,7 @@ var fs = require("fs");
 var contenu;
 
 /* GET home page. */
-contenu = fs.readFileSync("public/javascripts/intro.txt", "UTF-8");
-contenu = contenu.split("\r\n");
+contenu = fs.readFileSync("public/intro.txt", "UTF-8");
 router.get('/', function(req, res, next) {
   res.render('index', {tab:contenu });
 });
