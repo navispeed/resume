@@ -1,124 +1,370 @@
-nsa test_mmuhifi_c3 at 41.6777 MHz OK
-   Board:  XT-AV200: Avnet board + Xilinx LX200 FPGA + Tensilica bitstream OK
-   SysRAM: 96 MB
-   Flash: 16 MB
-   In:    serial
-   Out:   serial
-   Err:   serial
-   MAC:    00:50:C2:13:6f:07
-   IP:     192.168.11.105
-   open_ethernet
-   Autobooting in 5 seconds, press <SPACE> to stop
-   Using open_ethernet device
-   TFTP from server 192.168.11.55; our IP address is 192.168.11.105
-   Filename 'uImage.xtensa-2.6.29-smp.test_mmuhifi_c3'.
-   Load address: 0xd2000000
-   Loading: #################################################################
-            ###############
-   done
-   Bytes transferred = 1161826 (11ba62 hex)
-   Automatic boot of image at addr 0xD2000000 ... OK
-   ## Booting kernel from Legacy Image at d2000000 ... OK
-      Image Name:   Linux-2.6.29-rc7 OK
-      Image Type:   Xtensa Linux Kernel Image (gzip compressed)
-      Data Size:    1161762 Bytes =  1.1 MB
-      Load Address: d0001000
-      Entry Point:  d0001000
-      Verifying Checksum ... done
-      Uncompressing Kernel Image ... done
-   ## Linux Boot Params Starting At Address:0xd5f50000 OK
-      MEMORY:          tag:0x1003, type:0X1000, start:0X0, end:0X6000000
-      COMMAND_LINE:    tag:0x1001, size:188, data:'console=ttyS0,38400 ip=192.168.11.105:192.168.11.55:192.168.11.1:255.255.255.0:"HiFi-2 Demo" root=/dev/nfs rw nfsroot=192.168.11.55:/exports/LINUX_ROOT.HiFi-2 debug coredump_filter=0xff'
-      SERIAL_BAUDRATE: tag:0x1004, size:4, baudrate:38400
-   ## Transferring Control to Linux Kernel At Address 0xd0001000 ... OK
-   parse_bootparam: Ignoring tag 0x1004 OK
-   lx60 platform_init(bootparams:d5f50000)
-   Linux version 2.6.29-rc7 (pdelaney@pdelaney_fc5.hq.tensilica.com) (gcc version 4.2.1) #201 SMP Tue Nov 17 23:49:39 PST 2009
-   lx60 platform_setup(cmdline[0]:'console=ttyS0,38400 ip=192.168.11.105:192.168.11.55:192.168.11.1:255.255.255.0:"HiFi-2 Demo" root=/dev/nfs rw nfsroot=192.168.11.55:/exports/LINUX_ROOT.HiFi-2 debug coredump_filter=0xff') OK
-   smp_init_cpus: Core Count = 3
-   smp_init_cpus: Core Id = 9320
-   On node 0 totalpages: 24576
-   free_area_init_node: node 0, pgdat d0196540, node_mem_map d01fa000
-     Normal zone: 216 pages used for memmap
-     Normal zone: 24360 pages, LIFO batch:3
-   smp_prepare_boot_cpu:
-   Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 24360
-   Kernel command line: console=ttyS0,38400 ip=192.168.11.105:192.168.11.55:192.168.11.1:255.255.255.0:"HiFi-2 Demo" root=/dev/nfs rw nfsroot=192.168.11.55:/exports/LINUX_ROOT.HiFi-2 debug coredump_filter=0xff
-   trap_init 0
-   PID hash table entries: 512 (order: 9, 2048 bytes)
-   time_init: Platform Calibrating CPU frequency OK
-   time_init: ccount_per_jiffy:416777 [41.67 MHz], nsec_per_ccount:23
-   Console: colour dummy device 80x25 OK
-   console [ttyS0] enabled OK
-   Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
-   Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
-   Memory: 95196k/98304k available (1229k kernel code, 3040k reserved, 28k data, 72k init 0k highmem)
-   Calibrating delay loop... 41.26 BogoMIPS (lpj=206336) OK
-   Mount-cache hash table entries: 512 O
-   cpu 1 fffd OK
-   secondary_trap_init 1
-   Calibrating delay loop... 41.67 BogoMIPS (lpj=208384)
-   secondary_irq_init: set cached_irq_mask and enable interrupts))
-   secondary_time_init() OK
-   secondary_irq_enable(intrnum:6): cpu:1, INTENABLE:7c
-   secondary_irq_enable(intrnum:0): cpu:1, INTENABLE:7d
-   cpu 2 fff9 OK
-   secondary_trap_init 2
-   Calibrating delay loop... 41.57 BogoMIPS (lpj=207872)
-   secondary_irq_init: set cached_irq_mask and enable interrupts)) OK
-   secondary_time_init()
-   secondary_irq_enable(intrnum:6): cpu:2, INTENABLE:7c
-   secondary_irq_enable(intrnum:0): cpu:2, INTENABLE:7d
-   Brought up 3 CPUs OK
-   smp_cpus_done:
-   net_namespace: 304 bytes
-   NET: Registered protocol family 16
-   lx60_init() ...
-   bio: create slab <bio-0> at 0
-   NET: Registered protocol family 2
-   IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
-   TCP established hash table entries: 4096 (order: 3, 32768 bytes)
-   TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
-   TCP: Hash tables configured (established 4096 bind 4096)
-   TCP reno registered OK
-  NET: Registered protocol family 1
-   msgmni has been set to 186
-   alg: No test for md5 (md5-generic)
-   alg: No test for des (des-generic)
-   alg: No test for des3_ede (des3_ede-generic)
-   alg: No test for stdrng (krng)
-   io scheduler noop registered (default)
-   Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
-   serial8250: ttyS0 at MMIO 0x0 (irq = 3) is a 16550A
-   oeth_probe: {
-   oeth_setup: Open Ethernet Core Version 1.0.1
-    : oeth_setup: Found id1:2000, id2:5c30 at phy_id:3.
-    : Hardware MAC Address: 00:50:c2:13:6f:0f
-   eth0 (): not using net_device_ops yet
-   oeth_probe: }
-   mice: PS/2 mouse device common for all mice
-   TCP cubic registered
-   NET: Registered protocol family 17
-   RPC: Registered udp transport module.
-   RPC: Registered tcp transport module.
-   oeth_open:  Ready to process packets now on dev->name:'eth0', dev:d597d800;
-   IP-Config: Complete:
-        device=eth0, addr=192.168.11.105, mask=255.255.255.0, gw=192.168.11.1,
-        host="HiFi-2 Demo", domain=, nis-domain=(none),
-        bootserver=192.168.11.55, rootserver=192.168.11.55, rootpath=
-   Looking up port of RPC 100003/2 on 192.168.11.55
-   Looking up port of RPC 100005/1 on 192.168.11.55
-   VFS: Mounted root (nfs filesystem) on device 0:11.
-   Freeing unused kernel memory: 72k freed
-   Starting portmap: done
-   Initializing random number generator... done.
-   Starting network... OK
-   ip: RTNETLINK answers: File exists
-   Starting sshd: OK
-   Starting NFS statd: done
-   Starting NFS services: done
-   Starting NFS daemon: done
-   Starting NFS mountd: done
-   Starting domain name daemon: namedwarning: `named' uses 32-bit capabilities (legacy support in use)
-   Mounting Other NFS Filesystems done
-
+[OK] systemd-journald[335]: Runtime journal (/run/log/journal/) is 8.0M, max 160.3M, 152.3M free.
+[OK] kernel: Initializing cgroup subsys cpuset
+[OK] kernel: Initializing cgroup subsys cpu
+[OK] kernel: Initializing cgroup subsys cpuacct
+[OK] kernel: Linux version 4.4.0-22-generic (buildd@lgw01-41) (gcc version 5.3.1 20160413 (Ubuntu 5.3.1-14ubuntu2) ) #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 (Ubuntu 4.4.0-22.40-generic 4.4.8)
+[OK] kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-22-generic root=UUID=3522a6a2-f618-4267-9c9b-fb080fcfe1f0 ro net.ifnames=0
+[OK] kernel: KERNEL supported cpus:
+[OK] kernel:   Intel GenuineIntel
+[OK] kernel:   AMD AuthenticAMD
+[OK] kernel:   Centaur CentaurHauls
+[OK] kernel: x86/fpu: Legacy x87 FPU detected.
+[OK] kernel: x86/fpu: Using 'lazy' FPU context switches.
+[OK] kernel: e820: BIOS-provided physical RAM map:
+[OK] kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009d7ff] usable
+[OK] kernel: BIOS-e820: [mem 0x000000000009d800-0x000000000009ffff] reserved
+[OK] kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+[OK] kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000df77ffff] usable
+[OK] kernel: BIOS-e820: [mem 0x00000000df78e000-0x00000000df78ffff] type 9
+[OK] kernel: BIOS-e820: [mem 0x00000000df790000-0x00000000df79dfff] ACPI data
+[OK] kernel: BIOS-e820: [mem 0x00000000df79e000-0x00000000df7cffff] ACPI NVS
+[OK] kernel: BIOS-e820: [mem 0x00000000df7d0000-0x00000000df7dffff] reserved
+[OK] kernel: BIOS-e820: [mem 0x00000000df7ec000-0x00000000efffffff] reserved
+[OK] kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[OK] kernel: BIOS-e820: [mem 0x00000000ffc00000-0x00000000ffffffff] reserved
+[OK] kernel: BIOS-e820: [mem 0x0000000100000000-0x000000041fffffff] usable
+[OK] kernel: NX (Execute Disable) protection: active
+[OK] kernel: SMBIOS 2.6 present.
+[OK] kernel: DMI: Supermicro X8STi/X8STi, BIOS 2.0        09/17/10
+[OK] kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[OK] kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+[OK] kernel: e820: last_pfn = 0x420000 max_arch_pfn = 0x400000000
+[OK] kernel: MTRR default type: uncachable
+[OK] kernel: MTRR fixed ranges enabled:
+[OK] kernel:   00000-9FFFF write-back
+[OK] kernel:   A0000-BFFFF uncachable
+[OK] kernel:   C0000-CBFFF write-protect
+[OK] kernel:   CC000-DFFFF uncachable
+[OK] kernel:   E0000-E3FFF write-protect
+[OK] kernel:   E4000-EFFFF write-through
+[OK] kernel:   F0000-FFFFF write-protect
+[OK] kernel: MTRR variable ranges enabled:
+[OK] kernel:   0 base 000000000 mask C00000000 write-back
+[OK] kernel:   1 base 400000000 mask FE0000000 write-back
+[OK] kernel:   2 base 0E0000000 mask FE0000000 uncachable
+[OK] kernel:   3 base 0DF800000 mask FFF800000 uncachable
+[OK] kernel:   4 disabled
+[OK] kernel:   5 disabled
+[OK] kernel:   6 disabled
+[OK] kernel:   7 disabled
+[OK] kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WC  UC- WT
+[OK] kernel: original variable MTRRs
+[OK] kernel: reg 0, base: 0GB, range: 16GB, type WB
+[OK] kernel: reg 1, base: 16GB, range: 512MB, type WB
+[OK] kernel: reg 2, base: 3584MB, range: 512MB, type UC
+[OK] kernel: reg 3, base: 3576MB, range: 8MB, type UC
+[OK] kernel: total RAM covered: 16376M
+[OK] kernel: Found optimal setting for mtrr clean up
+[OK] kernel:  gran_size: 64K         chunk_size: 16M         num_reg: 7          lose cover RAM: 0G
+[OK] kernel: New variable MTRRs
+[OK] kernel: reg 0, base: 0GB, range: 2GB, type WB
+[OK] kernel: reg 1, base: 2GB, range: 1GB, type WB
+[OK] kernel: reg 2, base: 3GB, range: 512MB, type WB
+[OK] kernel: reg 3, base: 3576MB, range: 8MB, type UC
+[OK] kernel: reg 4, base: 4GB, range: 4GB, type WB
+[OK] kernel: reg 5, base: 8GB, range: 8GB, type WB
+[OK] kernel: reg 6, base: 16GB, range: 512MB, type WB
+[OK] kernel: e820: update [mem 0xdf800000-0xffffffff] usable ==> reserved
+[OK] kernel: e820: last_pfn = 0xdf780 max_arch_pfn = 0x400000000
+[OK] kernel: found SMP MP-table at [mem 0x000ff780-0x000ff78f] mapped at [ffff8800000ff780]
+[OK] kernel: Scanning 1 areas for low memory corruption
+[OK] kernel: Base memory trampoline at [ffff880000097000] 97000 size 24576
+[OK] kernel: BRK [0x021ff000, 0x021fffff] PGTABLE
+[OK] kernel: BRK [0x02200000, 0x02200fff] PGTABLE
+[OK] kernel: BRK [0x02201000, 0x02201fff] PGTABLE
+[OK] kernel: BRK [0x02202000, 0x02202fff] PGTABLE
+[OK] kernel: BRK [0x02203000, 0x02203fff] PGTABLE
+[OK] kernel: BRK [0x02204000, 0x02204fff] PGTABLE
+[OK] kernel: RAMDISK: [mem 0x33e9a000-0x35f44fff]
+[OK] kernel: ACPI: Early table checksum verification disabled
+[OK] kernel: ACPI: RSDP 0x00000000000FAAB0 000024 (v02 ACPIAM)
+[OK] kernel: ACPI: XSDT 0x00000000DF790100 00007C (v01 SMCI            20100917 MSFT 00000097)
+[OK] kernel: ACPI: FACP 0x00000000DF790290 0000F4 (v04 091710 FACP1846 20100917 MSFT 00000097)
+[OK] kernel: ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 128/64 (20150930/tbfadt-623)
+[OK] kernel: ACPI: DSDT 0x00000000DF790630 0066F5 (v02 10009  10009000 00000000 INTL 20051117)
+[OK] kernel: ACPI: FACS 0x00000000DF79E000 000040
+[OK] kernel: ACPI: FACS 0x00000000DF79E000 000040
+[OK] kernel: ACPI: APIC 0x00000000DF790390 0000D2 (v02 091710 APIC1846 20100917 MSFT 00000097)
+[OK] kernel: ACPI: MCFG 0x00000000DF790470 00003C (v01 091710 OEMMCFG  20100917 MSFT 00000097)
+[OK] kernel: ACPI: OEMB 0x00000000DF79E040 00007B (v01 091710 OEMB1846 20100917 MSFT 00000097)
+[OK] kernel: ACPI: HPET 0x00000000DF79A630 000038 (v01 091710 OEMHPET  20100917 MSFT 00000097)
+[OK] kernel: ACPI: DMAR 0x00000000DF79E0C0 000128 (v01 AMI    OEMDMAR  00000001 MSFT 00000097)
+[OK] kernel: ACPI: SSDT 0x00000000DF7A0A90 000363 (v01 DpgPmm CpuPm    00000012 INTL 20051117)
+[OK] kernel: ACPI: EINJ 0x00000000DF79A670 000130 (v01 AMIER  AMI_EINJ 20100917 MSFT 00000097)
+[OK] kernel: ACPI: BERT 0x00000000DF79A800 000030 (v01 AMIER  AMI_BERT 20100917 MSFT 00000097)
+[OK] kernel: ACPI: ERST 0x00000000DF79A830 0001B0 (v01 AMIER  AMI_ERST 20100917 MSFT 00000097)
+[OK] kernel: ACPI: HEST 0x00000000DF79A9E0 0000A8 (v01 AMIER  ABC_HEST 20100917 MSFT 00000097)
+[OK] kernel: ACPI: Local APIC address 0xfee00000
+[OK] kernel: No NUMA configuration found
+[OK] kernel: Faking a node at [mem 0x0000000000000000-0x000000041fffffff]
+[OK] kernel: NODE_DATA(0) allocated [mem 0x41ffed000-0x41fff1fff]
+[OK] kernel: Zone ranges:
+[OK] kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[OK] kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[OK] kernel:   Normal   [mem 0x0000000100000000-0x000000041fffffff]
+[OK] kernel:   Device   empty
+[OK] kernel: Movable zone start for each node
+[OK] kernel: Early memory node ranges
+[OK] kernel:   node   0: [mem 0x0000000000001000-0x000000000009cfff]
+[OK] kernel:   node   0: [mem 0x0000000000100000-0x00000000df77ffff]
+[OK] kernel:   node   0: [mem 0x0000000100000000-0x000000041fffffff]
+[OK] kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000041fffffff]
+[OK] kernel: On node 0 totalpages: 4192028
+[OK] kernel:   DMA zone: 64 pages used for memmap
+[OK] kernel:   DMA zone: 21 pages reserved
+[OK] kernel:   DMA zone: 3996 pages, LIFO batch:0
+[OK] kernel:   DMA32 zone: 14238 pages used for memmap
+[OK] kernel:   DMA32 zone: 911232 pages, LIFO batch:31
+[OK] kernel:   Normal zone: 51200 pages used for memmap
+[OK] kernel:   Normal zone: 3276800 pages, LIFO batch:31
+[OK] kernel: ACPI: PM-Timer IO Port: 0x808
+[OK] kernel: ACPI: Local APIC address 0xfee00000
+[OK] kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[OK] kernel: IOAPIC[0]: apic_id 8, version 32, address 0xfec00000, GSI 0-23
+[OK] kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[OK] kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[OK] kernel: ACPI: IRQ0 used by override.
+[OK] kernel: ACPI: IRQ9 used by override.
+[OK] kernel: Using ACPI (MADT) for SMP configuration information
+[OK] kernel: ACPI: HPET id: 0x8086a301 base: 0xfed00000
+[OK] kernel: smpboot: Allowing 16 CPUs, 8 hotplug CPUs
+[KO] kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[KO] kernel: PM: Registered nosave memory: [mem 0x0009d000-0x0009dfff]
+[KO] kernel: PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xdf780000-0xdf78dfff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xdf78e000-0xdf78ffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xdf790000-0xdf79dfff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xdf79e000-0xdf7cffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xdf7d0000-0xdf7dffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xdf7e0000-0xdf7ebfff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xdf7ec000-0xefffffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xf0000000-0xfedfffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xfee01000-0xffbfffff]
+[KO] kernel: PM: Registered nosave memory: [mem 0xffc00000-0xffffffff]
+[OK] kernel: e820: [mem 0xf0000000-0xfedfffff] available for PCI devices
+[OK] kernel: Booting paravirtualized kernel on bare hardware
+[OK] kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[OK] kernel: setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:16 nr_node_ids:1
+[OK] kernel: PERCPU: Embedded 33 pages/cpu @ffff88040f200000 s98008 r8192 d28968 u262144
+[OK] kernel: pcpu-alloc: s98008 r8192 d28968 u262144 alloc=1*2097152
+[OK] kernel: pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15
+[OK] kernel: Built 1 zonelists in Node order, mobility grouping on.  Total pages: 4126505
+[OK] kernel: Policy zone: Normal
+[OK] kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-22-generic root=UUID=3522a6a2-f618-4267-9c9b-fb080fcfe1f0 ro net.ifnames=0
+[OK] kernel: PID hash table entries: 4096 (order: 3, 32768 bytes)
+[OK] kernel: Calgary: detecting Calgary via BIOS EBDA area
+[OK] kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[OK] kernel: Memory: 16385492K/16768112K available (8359K kernel code, 1278K rwdata, 3920K rodata, 1480K init, 1292K bss, 382620K reserved, 0K cma-reserved)
+[OK] kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+[OK] kernel: Hierarchical RCU implementation.
+[OK] kernel:         Build-time adjustment of leaf fanout to 64.
+[OK] kernel:         RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=16.
+[OK] kernel: RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=16
+[OK] kernel: NR_IRQS:16640 nr_irqs:552 16
+[OK] kernel: Console: colour dummy device 80x25
+[OK] kernel: console [tty0] enabled
+[OK] kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+[OK] kernel: hpet clockevent registered
+[OK] kernel: tsc: Fast TSC calibration using PIT
+[OK] kernel: tsc: Detected 3066.500 MHz processor
+[OK] kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 6133.00 BogoMIPS (lpj=12266000)
+[OK] kernel: pid_max: default: 32768 minimum: 301
+[OK] kernel: ACPI: Core revision 20150930
+[OK] kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+[OK] kernel: Security Framework initialized
+[OK] kernel: Yama: becoming mindful.
+[OK] kernel: AppArmor: AppArmor initialized
+[OK] kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)
+[OK] kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[OK] kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[OK] kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[OK] kernel: Initializing cgroup subsys io
+[OK] kernel: Initializing cgroup subsys memory
+[OK] kernel: Initializing cgroup subsys devices
+[OK] kernel: Initializing cgroup subsys freezer
+[OK] kernel: Initializing cgroup subsys net_cls
+[OK] kernel: Initializing cgroup subsys perf_event
+[OK] kernel: Initializing cgroup subsys net_prio
+[OK] kernel: Initializing cgroup subsys hugetlb
+[OK] kernel: Initializing cgroup subsys pids
+[OK] kernel: CPU: Physical Processor ID: 0
+[OK] kernel: CPU: Processor Core ID: 0
+[OK] kernel: mce: CPU supports 9 MCE banks
+[OK] kernel: CPU0: Thermal monitoring enabled (TM1)
+[OK] kernel: process: using mwait in idle threads
+[OK] kernel: Last level iTLB entries: 4KB 512, 2MB 7, 4MB 7
+[OK] kernel: Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32, 1GB 0
+[OK] kernel: Freeing SMP alternatives memory: 28K (ffffffff820b3000 - ffffffff820ba000)
+[OK] kernel: ftrace: allocating 31906 entries in 125 pages
+[OK] kernel: smpboot: Max logical packages: 4
+[OK] kernel: smpboot: APIC(0) Converting physical 0 to logical package 0
+[OK] kernel: DMAR-IR: This system BIOS has enabled interrupt remapping
+                                                    on a chipset that contains an erratum making that
+                                                    feature unstable.  To maintain system stability
+                                                    interrupt remapping is being disabled.  Please
+                                                    contact your BIOS vendor for an update
+[OK] kernel: Switched APIC routing to physical flat.
+[OK] kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[OK] kernel: smpboot: CPU0: Intel(R) Core(TM) i7 CPU         950  @ 3.07GHz (family: 0x6, model: 0x1a, stepping: 0x5)
+[OK] kernel: Performance Events: PEBS fmt1+, 16-deep LBR, Nehalem events, Intel PMU driver.
+[OK] kernel: core: CPU erratum AAJ80 worked around
+[OK] kernel: core: CPUID marked event: 'bus cycles' unavailable
+[OK] kernel: ... version:                3
+[OK] kernel: ... bit width:              48
+[OK] kernel: ... generic registers:      4
+[OK] kernel: ... value mask:             0000ffffffffffff
+[OK] kernel: ... max period:             000000007fffffff
+[OK] kernel: ... fixed-purpose events:   3
+[OK] kernel: ... event mask:             000000070000000f
+[OK] kernel: x86: Booting SMP configuration:
+[OK] kernel: .... node  #0, CPUs:        #1
+[OK] kernel: NMI watchdog: enabled on all CPUs, permanently consumes one hw-PMU counter.
+[OK] kernel:   #2  #3  #4  #5  #6  #7
+[OK] kernel: x86: Booted up 1 node, 8 CPUs
+[OK] kernel: smpboot: Total of 8 processors activated (49064.00 BogoMIPS)
+[OK] kernel: devtmpfs: initialized
+[OK] kernel: evm: security.selinux
+[OK] kernel: evm: security.SMACK64
+[OK] kernel: evm: security.SMACK64EXEC
+[OK] kernel: evm: security.SMACK64TRANSMUTE
+[OK] kernel: evm: security.SMACK64MMAP
+[OK] kernel: evm: security.ima
+[OK] kernel: evm: security.capability
+[OK] kernel: PM: Registering ACPI NVS region [mem 0xdf79e000-0xdf7cffff] (204800 bytes)
+[OK] kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[OK] kernel: pinctrl core: initialized pinctrl subsystem
+[OK] kernel: RTC time: 13:44:53, date: 09/29/16
+[OK] kernel: NET: Registered protocol family 16
+[OK] kernel: cpuidle: using governor ladder
+[OK] kernel: cpuidle: using governor menu
+[OK] kernel: PCCT header not found.
+[OK] kernel: ACPI: bus type PCI registered
+[OK] kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[OK] kernel: PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+[OK] kernel: PCI: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in E820
+[OK] kernel: PCI: Using configuration type 1 for base access
+[OK] kernel: ACPI: Added _OSI(Module Device)
+[OK] kernel: ACPI: Added _OSI(Processor Device)
+[OK] kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+[OK] kernel: ACPI: Added _OSI(Processor Aggregator Device)
+[OK] kernel: ACPI: Executed 1 blocks of module-level executable AML code
+[OK] kernel: ACPI: Dynamic OEM Table Load:
+[OK] kernel: ACPI: SSDT 0xFFFF88040C8FC000 00223C (v01 DpgPmm P001Ist  00000011 INTL 20051117)
+[OK] kernel: ACPI: Dynamic OEM Table Load:
+[OK] kernel: ACPI: SSDT 0xFFFF88040CDD1800 000659 (v01 PmRef  P001Cst  00003001 INTL 20051117)
+[OK] kernel: ACPI: Interpreter enabled
+[OK] kernel: ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+[OK] kernel: ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[OK] kernel: ACPI: (supports S0 S1 S4 S5)
+[OK] kernel: ACPI: Using IOAPIC for interrupt routing
+[OK] kernel: HEST: Table parsing has been initialized.
+[OK] kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[OK] kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[OK] kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI]
+[OK] kernel: acpi PNP0A08:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+[OK] kernel: PCI host bridge to bus 0000:00
+[OK] kernel: pci 0000:00:1f.0: can't claim BAR 13 [io  0x0800-0x087f]: address conflict with ACPI CPU throttle [io  0x0810-0x0815]
+[OK] kernel: pci 0000:00:1f.0: quirk: [io  0x0500-0x053f] claimed by ICH6 GPIO
+[OK] kernel: pci 0000:00:1f.0: ICH7 LPC Generic IO decode 1 PIO at 4700 (mask 0097)
+[OK] kernel: pci 0000:00:1f.0: ICH7 LPC Generic IO decode 2 PIO at 03e8 (mask 000f)
+[OK] kernel: pci 0000:00:1f.0: ICH7 LPC Generic IO decode 3 PIO at 1640 (mask 000f)
+[OK] kernel: pci 0000:00:1f.0: ICH7 LPC Generic IO decode 4 PIO at 0ca0 (mask 000f)
+[OK] kernel: pci 0000:00:1f.2: [8086:3a22] type 00 class 0x010601
+[OK] kernel: pci 0000:00:1f.2: reg 0x10: [io  0xb480-0xb487]
+[OK] kernel: pci 0000:00:1f.2: reg 0x14: [io  0xc000-0xc003]
+[OK] kernel: pci 0000:00:1f.2: reg 0x18: [io  0xbc00-0xbc07]
+[OK] kernel: pci 0000:00:1f.2: reg 0x1c: [io  0xb880-0xb883]
+[OK] kernel: pci 0000:00:1f.2: reg 0x20: [io  0xb800-0xb81f]
+[OK] kernel: pci 0000:00:1f.2: reg 0x24: [mem 0xfbed6000-0xfbed67ff]
+[OK] kernel: pci 0000:00:1f.2: PME# supported from D3hot
+[OK] kernel: pci 0000:00:1f.3: [8086:3a30] type 00 class 0x0c0500
+[OK] kernel: pci 0000:00:1f.3: reg 0x10: [mem 0xfbed4000-0xfbed40ff 64bit]
+[OK] kernel: pci 0000:00:1f.3: reg 0x20: [io  0x0400-0x041f]
+[OK] kernel: pci 0000:01:00.0: [8086:10d3] type 00 class 0x020000
+[OK] kernel: pci 0000:01:00.0: reg 0x10: [mem 0xfbce0000-0xfbcfffff]
+[OK] kernel: pci 0000:01:00.0: reg 0x18: [io  0xdc00-0xdc1f]
+[OK] kernel: pci 0000:01:00.0: reg 0x1c: [mem 0xfbcdc000-0xfbcdffff]
+[OK] kernel: pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[OK] kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+[OK] kernel: pci 0000:00:01.0:   bridge window [io  0xd000-0xdfff]
+[OK] kernel: pci 0000:00:01.0:   bridge window [mem 0xfbc00000-0xfbcfffff]
+[OK] kernel: pci 0000:02:00.0: [8086:10d3] type 00 class 0x020000
+[OK] kernel: pci 0000:02:00.0: reg 0x10: [mem 0xfbde0000-0xfbdfffff]
+[OK] kernel: pci 0000:02:00.0: reg 0x18: [io  0xec00-0xec1f]
+[OK] kernel: pci 0000:02:00.0: reg 0x1c: [mem 0xfbddc000-0xfbddffff]
+[OK] kernel: pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+[OK] kernel: pci 0000:00:02.0: PCI bridge to [bus 02]
+[OK] kernel: pci 0000:00:02.0:   bridge window [io  0xe000-0xefff]
+[OK] kernel: pci 0000:00:02.0:   bridge window [mem 0xfbd00000-0xfbdfffff]
+[OK] kernel: pci 0000:00:03.0: PCI bridge to [bus 03]
+[OK] kernel: pci 0000:00:07.0: PCI bridge to [bus 04]
+[OK] kernel: pci 0000:00:09.0: PCI bridge to [bus 05]
+[OK] kernel: pci 0000:06:04.0: [102b:0532] type 00 class 0x030000
+[OK] kernel: pci 0000:06:04.0: reg 0x10: [mem 0xf9800000-0xf9ffffff pref]
+[OK] kernel: pci 0000:06:04.0: reg 0x14: [mem 0xfaffc000-0xfaffffff]
+[OK] kernel: pci 0000:06:04.0: reg 0x18: [mem 0xfb000000-0xfb7fffff]
+[OK] kernel: pci 0000:00:1e.0: PCI bridge to [bus 06] (subtractive decode)
+[OK] kernel: pci 0000:00:1e.0:   bridge window [mem 0xfaf00000-0xfb7fffff]
+[OK] kernel: pci 0000:00:1e.0:   bridge window [mem 0xf9800000-0xf9ffffff 64bit pref]
+[OK] kernel: pci 0000:00:1e.0:   bridge window [io  0x0000-0x0cf7 window] (subtractive decode)
+[OK] kernel: pci 0000:00:1e.0:   bridge window [io  0x0d00-0xffff window] (subtractive decode)
+[OK] kernel: pci 0000:00:1e.0:   bridge window [mem 0x000a0000-0x000bffff window] (subtractive decode)
+[OK] kernel: pci 0000:00:1e.0:   bridge window [mem 0x000d0000-0x000dffff window] (subtractive decode)
+[OK] kernel: pci 0000:00:1e.0:   bridge window [mem 0xf0000000-0xfed8ffff window] (subtractive decode)
+[OK] kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 6 7 10 11 12 14 *15)
+[OK] kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 6 7 10 11 12 *14 15)
+[OK] kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 6 7 *10 11 12 14 15)
+[OK] kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 6 7 10 *11 12 14 15)
+[OK] kernel: ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 6 7 10 11 12 14 15) *0, disabled.
+[OK] kernel: ACPI: PCI Interrupt Link [LNKF] (IRQs *3 4 6 7 10 11 12 14 15)
+[OK] kernel: ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 6 7 10 11 12 14 15) *0, disabled.
+[OK] kernel: ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 6 *7 10 11 12 14 15)
+[OK] kernel: ACPI: Enabled 1 GPEs in block 00 to 3F
+[OK] kernel: vgaarb: setting as boot device: PCI:0000:06:04.0
+[OK] kernel: vgaarb: device added: PCI:0000:06:04.0,decodes=io+mem,owns=io+mem,locks=none
+[OK] kernel: vgaarb: loaded
+[OK] kernel: vgaarb: bridge control possible 0000:06:04.0
+[OK] kernel: SCSI subsystem initialized
+[OK] kernel: libata version 3.00 loaded.
+[OK] kernel: ACPI: bus type USB registered
+[OK] kernel: usbcore: registered new interface driver usbfs
+[OK] kernel: usbcore: registered new interface driver hub
+[OK] kernel: usbcore: registered new device driver usb
+[OK] kernel: PCI: Using ACPI for IRQ routing
+[OK] kernel: PCI: Discovered peer bus ff
+[OK] kernel: PCI: root bus ff: using default resources
+[OK] kernel: PCI: Probing PCI hardware (bus ff)
+[OK] kernel: ACPI: \: failed to evaluate _DSM (0x1001)
+[OK] kernel: PCI host bridge to bus 0000:ff
+[OK] kernel: pci_bus 0000:ff: root bus resource [io  0x0000-0xffff]
+[OK] kernel: pci_bus 0000:ff: root bus resource [mem 0x00000000-0xfffffffff]
+[OK] kernel: pci_bus 0000:ff: No busn resource found for root bus, will use [bus ff-ff]
+[OK] kernel: e820: reserve RAM buffer [mem 0x0009d800-0x0009ffff]
+[OK] kernel: e820: reserve RAM buffer [mem 0xdf780000-0xdfffffff]
+[OK] kernel: NetLabel: Initializing
+[OK] kernel: NetLabel:  domain hash size = 128
+[OK] kernel: NetLabel:  protocols = UNLABELED CIPSOv4
+[OK] kernel: NetLabel:  unlabeled traffic allowed by default
+[OK] kernel: HPET: 4 timers in total, 0 timers will be used for per-cpu timer
+[OK] named[1532]: starting BIND 9.10.3-P4-Ubuntu <id:ebd72b3> -f -u bind
+[OK] named[1532]: built with '--prefix=/usr' '--mandir=/usr/share/man' '--libdir=/usr/lib/x86_64-linux-gnu' '--infodir=/usr/share/info' '--sysconfdir=/etc/bind' '--localstatedir=/' '--enable-threads' '--enable-largefile' '--with-libtool' '--enable-shared' '--enable-static' '--with-openssl=/usr' '--with-gssapi=/usr' '--with-gnu-ld' '--with-geoip=/usr' '--with-atf=no' '--enable-ipv6' '--enable-rrl' '--enable-filter-aaaa' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib/x86_64-linux-gnu/softhsm/libsofthsm2.so' 'CFLAGS=-g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -fno-strict-aliasing -fno-delete-null-pointer-checks -DNO_VERSION_DATE' 'LDFLAGS=-Wl,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2 -DDIG_SIGCHASE'
+[OK] named[1532]: ----------------------------------------------------
+[OK] named[1532]: BIND 9 is maintained by Internet Systems Consortium,
+[OK] named[1532]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+[OK] named[1532]: corporation.  Support and training for BIND 9 are
+[OK] named[1532]: available at https://www.isc.org/support
+[OK] named[1532]: ----------------------------------------------------
+[OK] named[1532]: adjusted limit on open files from 4096 to 1048576
+[OK] named[1532]: found 8 CPUs, using 8 worker threads
+[OK] named[1532]: using 4 UDP listeners per interface
+[OK] named[1532]: using up to 4096 sockets
+[OK] systemd[1]: Started /etc/rc.local Compatibility.
+[OK] systemd[1]: Started LSB: disk temperature monitoring daemon.
+[OK] systemd[1]: Starting Terminate Plymouth Boot Screen...
+[OK] systemd[1]: Starting Hold until boot process finishes up...
+[OK] systemd[1]: Started Terminate Plymouth Boot Screen.
+[OK] systemd[1]: Started Hold until boot process finishes up.
+[OK] sshd[1534]: Server listening on 0.0.0.0 port 22.

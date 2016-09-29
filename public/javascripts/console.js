@@ -8,7 +8,7 @@ var name = "";
 function blinkingCursor() {
     var cont = $("#cursor");
     if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|")
-        $("#cursor").html($("#cursor").html().substring(0, cont.length - 1));
+        cont.html(cont.html().substring(0, cont.length - 1));
     else
         cont.text(cont.text() + "|");
 }
@@ -16,8 +16,9 @@ function blinkingCursor() {
 function extracted() {
     var cont = $("#cursor");
     if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|")
-        $("#cursor").html($("#cursor").html().substring(0, cont.length - 1));
+        cont.html(cont.html().substring(0, cont.length - 1));
 }
+
 function write(str, color) {
 
     var $actualLine = $("#line" + lineNumber);
@@ -30,11 +31,20 @@ function execute(str) {
     var $actualLine = $("#line" + lineNumber);
     lineNumber++;
     extracted();
-    if (name == "")
+    if (name == "") {
         name = $actualLine.text().split(":")[1];
+        if (name == "")
+            name = "Petit Lapinou";
+        subsytem.execute("help");
+    }
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
+<<<<<<< HEAD
     subsytem.execute($actualLine.text().replace("\n", ""));
+=======
+    subsytem.execute($actualLine.text());
+    window.scrollTo(0, 4000000);
+>>>>>>> aeb2b0880613d3994af52bf9dee33ea6143725ab
 }
 
 function backspace() {
@@ -46,33 +56,43 @@ function backspace() {
 
 function makeIntro() {
     document.getElementById("line0").style.visibility = "visible";
-    $("#line0").hide();
-    var LineIntro= $("#line0");
-    var textIntro= $("#line0").text().split("\n");
+    var $cursor = $("#cursor");
+    var $line1 = $("#line1");
+    var $line0 = $("#line0");
+    $cursor.hide();
+    $line1.hide();
+    var LineIntro = $line0;
+    var textIntro = $line0.text().split("\n");
     LineIntro.text("");
     var buff;
-    for(var i = 0; textIntro.length != i ; i++) {
-        buff = textIntro[i].replace("OK", "<span class='g'>OK</span>");
+    var j = 0;
+
+    function writeBoot() {
+        LineIntro.html("<h3></h3>");
+    }
+
+    function writeLine() {
+        buff = textIntro[j].replace("OK", "<span class='g' style='color: green'>OK</span>");
         buff = buff.replace("done", "<span class='g'>done</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
+        ++j;
+        if (j < textIntro.length) {
+            window.scrollTo(0, 4000000);
+            setTimeout(writeLine, 1);
+        } else {
+            $cursor.show();
+            $line1.show();
+            window.scrollTo(0, 4000000);
+        }
+
     }
-    $("#line0").show(4000);
-}
-function findPos(obj) {
-    var curtop = 0;
-    if (obj.offsetParent) {
-        do {
-            curtop += obj.offsetTop;
-        } while (obj = obj.offsetParent);
-        return [curtop];
-    }
+    writeLine();
 }
 
 $(document).keydown(function (e) {
-
     switch (e.which) {
         case 13:
-            execute(String.fromCharCode(e.which)); //TODO put the stored command as parameter
+            execute(String.fromCharCode(e.which));
             break;
         case 8:
             backspace()
