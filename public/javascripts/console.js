@@ -95,7 +95,7 @@ $(document).keydown(function (e) {
             backspace()
             break;
         default:
-            write(String.fromCharCode(e.which));
+            write(String.fromCharCode(e.which).toLowerCase());
     }
 });
 setInterval(blinkingCursor, 1000);
