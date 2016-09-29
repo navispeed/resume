@@ -6,31 +6,38 @@
       "content": [
         {
           "name": "cd",
-          "permission": 7
+          "permission": 7,
+          "desc": "Change directory"
         },
         {
           "name": "ls",
-          "permission": 7
+          "permission": 7,
+          "desc": "List directory contents"
         },
         {
           "name": "help",
-          "permission": 7
+          "permission": 7,
+          "desc": "Show this message"
         },
         {
           "name": "author",
-          "permission": 7
+          "permission": 7,
+          "desc": "Show more information about the author"
         },
         {
           "name": "sendmail",
-          "permission": 7
+          "permission": 7,
+          "desc": "Send a mail to the authors"
         },
         {
           "name": "poweroff",
-          "permission": 7
+          "permission": 7,
+          "desc": "Shutdown the machine"
         },
         {
           "name": "github",
-          "permission": 7
+          "permission": 7,
+          "desc": "Open a new window on author's github"
         }
       ]
     },

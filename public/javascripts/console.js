@@ -35,6 +35,16 @@ function write(str, color) {
     $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
 }
 
+function writeNl(str, color) {
+    write(str);
+    var $actualLine = $("#line" + lineNumber);
+    extracted();
+    $actualLine.html($actualLine.html() + "<br>");
+    $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
+}
+
+
+
 function execute(str) {
     var $actualLine = $("#line" + lineNumber);
     lineNumber++;
@@ -123,7 +133,6 @@ $(document).keydown(function (e) {
         clearWin();
         return
     }
-    console.log(cl);
     if (innib == 1) {
         switch (e.which) {
             case 13:

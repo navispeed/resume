@@ -14,6 +14,11 @@ var binairies = {
 
     help: function (ac, av) {
         console.log("help", write);
-        write("You can't change directory :'), please contact me")
+        writeNl("Welcome on my cv, this is a list of avalaible commands: ");
+        var binairieIn = subsytem.getBinairieIn("/bin");
+        for (var i = 0; i < binairieIn.length ; ++i) {
+            writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);
+        }
+        write("Enjoy :)")
     }
 };
