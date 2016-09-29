@@ -39,12 +39,8 @@ function execute(str) {
     }
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
-<<<<<<< HEAD
-    subsytem.execute($actualLine.text().replace("\n", ""));
-=======
     subsytem.execute($actualLine.text());
     window.scrollTo(0, 4000000);
->>>>>>> aeb2b0880613d3994af52bf9dee33ea6143725ab
 }
 
 function backspace() {
