@@ -24,6 +24,7 @@ function write(str, color) {
     if ($actualLine[0] == undefined) {
         $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
         $actualLine = $("#line" + (lineNumber));
+        lineNumber++;
     }
     extracted();
     $actualLine.text(($actualLine.text() + str));
