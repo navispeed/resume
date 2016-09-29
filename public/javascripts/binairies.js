@@ -5,7 +5,7 @@
 var binairies = {
 
     ls: function (ac, av) {
-
+        console.log("ls");
     },
 
     cd: function (ac, av) {
