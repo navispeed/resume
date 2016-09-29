@@ -5,8 +5,6 @@ body {
 .console {
     font-family: courier, monospace;
     color: #fff;
-    margin-left:10px;
-    margin-top:10px;
     font-size:14px;
 }
 #cursor {

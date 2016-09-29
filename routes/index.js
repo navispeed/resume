@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var os = require("os");
 var fs = require("fs");
 var contenu;
 
@@ -9,5 +10,5 @@ router.get('/', function(req, res, next) {
   res.render('index', {tab:contenu });
 });
 
-console.log(contenu);
+console.log(os.hostname());
 module.exports = router;
