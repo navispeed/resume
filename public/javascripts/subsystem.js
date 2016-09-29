@@ -12,6 +12,9 @@ var subsytem = {
     getFile: function (path) {
         var split = path.split("/");
         var origin = null;
+        if (path == "." || path == "./") {
+            return this.pwd;
+        }
         if (path.charAt(0) == '/') {             //Absolute
             origin = this.system;
         } else {                                 //Relative

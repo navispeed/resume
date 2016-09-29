@@ -20,7 +20,20 @@ var binairies = {
     },
 
     ls: function (ac, av) {
-        subsytem.explore();
+        var s = "";
+
+        av[1] = (av[1] == undefined ? "./" : av[1]);
+        subsytem.getFile(av[1]).content.forEach(function (e) {
+            s += e.name + "   ";
+        });
+        if (ac > 2) {
+            for (var i = 2; i < ac; ++i) {
+                subsytem.getFile(av[i]).content.forEach(function (e) {
+                    s += e.name;
+                });
+            }
+        }
+        writeNl(s);
     },
 
     cd: function (ac, av) {

@@ -132,7 +132,7 @@ $(document).keydown(function (e) {
         cl[clRow] = e.which;
         if (cl[0] == 17 && cl[1] == 76)
             e.which = -1;
-        switch (e.which) {
+        switch (e.which) { //TODO faire marcher ca avec autre chose que de l'azerty
             case -1:
                 clearWin();
                 break;
