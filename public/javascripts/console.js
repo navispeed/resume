@@ -126,7 +126,6 @@ function clearWin() {
 }
 
 $(document).keydown(function (e) {
-    console.log(cl);
     if (innib == 1) {
         clRow = (clRow == 0) ? 1 : 0;
         cl[clRow] = e.which;
