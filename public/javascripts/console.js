@@ -126,6 +126,7 @@ function clearWin() {
 }
 
 $(document).keydown(function (e) {
+    console.log(e.which);
     if (innib == 1) {
         clRow = (clRow == 0) ? 1 : 0;
         cl[clRow] = e.which;
@@ -144,6 +145,12 @@ $(document).keydown(function (e) {
             case 17:
                 break;
             case 91:
+                break;
+            case 190:
+                write(".");
+                break;
+            case 191:
+                write("/");
                 break;
             default:
                 write(String.fromCharCode(e.which).toLowerCase());

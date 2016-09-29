@@ -4,12 +4,44 @@
 
 var binairies = {
 
-    ls: function (ac, av) {
+    getPwd: function () {
+        var c = subsytem.pwd;
+        var l = [];
+        var s = "";
 
+        while (c.name != subsytem.system.name) {
+            l.push(c.name);
+            c = c.parent;
+        }
+        for (var i = l.length - 1; i >= 0; --i) {
+            s += "/" + l[i];
+        }
+        return s;
+    },
+
+    ls: function (ac, av) {
+        subsytem.explore();
     },
 
     cd: function (ac, av) {
-        writeNl("You can't change directory :'), please contact me")
+        av[1] = av[1] == undefined ? "/home/user" : av[1];
+        var file = subsytem.getFile(av[1]);
+
+        if (file == undefined) {
+            writeNl("Cannot find " + av[1]);
+        }
+
+        if (file.content != undefined) {
+            subsytem.pwd = file;
+            for (var i = 0; i < subsytem.env.length; ++i) {
+                if (subsytem.env[i].name == "PWD") {
+                    subsytem.env[i].value = binairies.getPwd();
+                    return;
+                }
+            }
+        } else {
+            writeNl("Cannot access " + av[1] + " : not a directory");
+        }
     },
 
     author: function (ac, av) {
@@ -33,9 +65,20 @@ var binairies = {
         console.log("help", write);
         writeNl("Welcome on my resume, this is a list of avalaible commands: ");
         var binairieIn = subsytem.getBinairieIn("/bin");
-        for (var i = 0; i < binairieIn.length ; ++i) {
+        for (var i = 0; i < binairieIn.length; ++i) {
             writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);
         }
         write("Enjoy :)")
+    },
+
+    env: function (ac, av) {
+        for (var i = 0; i < subsytem.env.length; ++i) {
+            writeNl(subsytem.env[i].name + "=" + subsytem.env[i].value);
+        }
+    },
+
+    pwd: function (ac, av) {
+        var s = binairies.getPwd();
+        writeNl(s);
     }
 };

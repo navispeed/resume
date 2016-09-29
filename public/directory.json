@@ -43,7 +43,18 @@
           "name": "linkedin",
           "permission": 7,
           "desc": "Open a new window on author's linkedin"
+        },
+        {
+          "name": "env",
+          "permission": 7,
+          "desc": "Show user environment"
+        },
+        {
+          "name": "pwd",
+          "permission": 7,
+          "desc": "Just a basic pwd"
         }
+
       ]
     },
     {

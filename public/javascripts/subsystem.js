@@ -6,7 +6,30 @@ var subsytem = {
 
     system: [],
     env: [],
+    pwd: {},
     who: {},
+
+    getFile: function (path) {
+        var split = path.split("/");
+        var origin = null;
+        if (path.charAt(0) == '/') {             //Absolute
+            origin = this.system;
+        } else {                                 //Relative
+            origin = this.pwd;
+        }
+        for (var i = 0; i < split.length; ++i) {
+            var c = split[i];
+            if (c == "") {
+                continue;
+            }
+            if (c == "..") {
+                origin = origin.parent;
+                continue;
+            }
+            origin = origin.get(c);
+        }
+        return origin;
+    },
 
     explore: function (path) {
         var res = [];
@@ -76,14 +99,6 @@ var subsytem = {
             url: "/directory.json",
         }).done(function (msg) {
             subsytem.system = eval(msg);
-            subsytem.system.get = function (name) {
-                for (var i = 0; i < this.content.length; ++i) {
-                    if (this.content[i].name == name) {
-                        return this.content[i];
-                    }
-                }
-                return undefined;
-            };
             function assignFunction(directory) {
                 for (var i = 0; i < directory.content.length; ++i) {
                     var child = directory.content[i];
@@ -95,7 +110,30 @@ var subsytem = {
                 }
             }
 
-            assignFunction(subsytem.system)
+            function setUnixStyleDirectory(current, parent) {
+                current.parent = parent;
+                for (var i = 0; i < current.content.length; ++i) {
+                    if (current.content[i].content != undefined) {
+                        setUnixStyleDirectory(current.content[i], current);
+                    }
+                }
+                current.get = function (name) {
+                    for (var i = 0; i < this.content.length; ++i) {
+                        if (this.content[i].name == name) {
+                            return this.content[i];
+                        }
+                    }
+                    return undefined;
+                };
+            }
+
+            function setPwd() {
+                subsytem.pwd = subsytem.system.content[1].content[0];
+            }
+
+            setUnixStyleDirectory(subsytem.system, subsytem.system);
+            assignFunction(subsytem.system);
+            setPwd();
         });
     },
     initEnv: function () {
@@ -111,10 +149,11 @@ var subsytem = {
             }
             return undefined;
         };
-    }, init: function () {
+    },
+
+    init: function () {
         this.downloadFileSystem();
         this.initEnv();
-
     },
 };
 
