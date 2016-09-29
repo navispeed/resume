@@ -40,6 +40,7 @@ function execute(str) {
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
     subsytem.execute($actualLine.text());
+    write("");
     window.scrollTo(0, 4000000);
 }
 
@@ -68,8 +69,8 @@ function makeIntro() {
     }
 
     function writeLine() {
-        buff = textIntro[j].replace("OK", "<span class='g' style='color: green'>OK</span>");
-        buff = buff.replace("done", "<span class='g'>done</span>");
+        buff = textIntro[j].replace("OK", "<span class='g'>OK</span>");
+        buff = buff.replace("KO", "<span class='r'>KO</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
         ++j;
         if (j < textIntro.length) {
