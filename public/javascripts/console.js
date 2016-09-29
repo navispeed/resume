@@ -30,11 +30,12 @@ function execute(str) {
     var $actualLine = $("#line" + lineNumber);
     lineNumber++;
     extracted();
-    if (name == "")
+     if (name == "")
         name = $actualLine.text().split(":")[1];
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
     subsytem.execute($actualLine.text());
+    window.scrollTo(0, 4000);
 }
 
 function backspace() {
@@ -46,7 +47,8 @@ function backspace() {
 
 function makeIntro() {
     document.getElementById("line0").style.visibility = "visible";
-    $("#line0").hide();
+    $("#cursor").hide();
+    $("#line1").hide();
     var LineIntro= $("#line0");
     var textIntro= $("#line0").text().split("\n");
     LineIntro.text("");
@@ -56,7 +58,9 @@ function makeIntro() {
         buff = buff.replace("done", "<span class='g'>done</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
     }
-    $("#line0").show(4000);
+        $("#cursor").show();
+        $("#line1").show();
+        window.scrollTo(0, 4000);
 }
 function findPos(obj) {
     var curtop = 0;
@@ -69,7 +73,6 @@ function findPos(obj) {
 }
 
 $(document).keydown(function (e) {
-
     switch (e.which) {
         case 13:
             execute(String.fromCharCode(e.which)); //TODO put the stored command as parameter
