@@ -75,14 +75,18 @@ function makeIntro() {
     }
 
     function writeLine() {
-        buff = textIntro[j].replace("OK", "<span class='g'>OK</span>");
+        if (textIntro[j + 1] == undefined) {
+            textIntro[j + 1] = "";
+        }
+        buff = textIntro[j].replace("OK", "<span class='g'>OK</span>") + '<br>' + textIntro[j + 1].replace("OK", "<span class='g'>OK</span>");
         buff = buff.replace("KO", "<span class='r'>KO</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
-        ++j;
+        j += 2;
         if (j < textIntro.length) {
             window.scrollTo(0, 4000000);
             setTimeout(writeLine, 1);
         } else {
+            console.log("finish");
             $cursor.show();
             $line1.show();
             window.scrollTo(0, 4000000);
