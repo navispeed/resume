@@ -31,16 +31,18 @@ function execute(str) {
     lineNumber++;
     extracted();
     if (name == "")
-    name = $actualLine.text().split(":")[1];
+        name = $actualLine.text().split(":")[1];
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
-
+    subsytem.execute(str);
 }
 
 function carriageReturn() {
     var actualLine = $("#line" + lineNumber);
+    console.log("carriageReturn()", actualLine.text())
     actualLine.text(actualLine.text().substring(0, actualLine.text().length - 1)); // remove it
     actualLine.html(actualLine.html() + "<span id='cursor'>|</span>");
+    console.log("carriageReturn() FINISH", actualLine.text())
 }
 
 $(document).keydown(function (e) {
