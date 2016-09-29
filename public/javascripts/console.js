@@ -63,17 +63,22 @@ function makeIntro() {
     var buff;
     var j = 0;
     function writeLine() {
-        buff = textIntro[j].replace("OK", "<span class='g'>OK</span>");
+        buff = textIntro[j].replace("OK", "<span class='g' style='color: green'>OK</span>");
+        buff = textIntro[j].replace("KO", "<span class='g' style='color: red'>KO</span>");
         buff = buff.replace("done", "<span class='g'>done</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
-        setTimeout(writeLine, Math.random() * 100 % 40 + 1);
         window.scrollTo(0, 4000000);
         ++j;
+        if (j < textIntro.length) {
+            setTimeout(writeLine, Math.random() * 100 % 10 + 1);
+        } else {
+            $cursor.show();
+            $line1.show();
+            window.scrollTo(0, 4000000);
+        }
+
     }
     writeLine();
-    $cursor.show();
-    $line1.show();
-    window.scrollTo(0, 4000000);
 }
 
 $(document).keydown(function (e) {
