@@ -6,6 +6,7 @@ var lineNumber = 1;
 var name = "";
 var innib = 0;
 var cl = [0, 0];
+var clRow = 0;
 
 function blinkingCursor() {
     var cont = $("#cursor");
@@ -113,19 +114,18 @@ function clearWin() {
     execute("");
     cl = [0, 0];
 }
-var bool = 0;
 
 $(document).keydown(function (e) {
-    bool = (bool == 0) ? 1 : 0;
-    cl[bool] = e.which;
-    if (cl[0] == 17 && cl[1] == 76)
-    {
-        clearWin();
-        return
-    }
     console.log(cl);
     if (innib == 1) {
+        clRow = (clRow == 0) ? 1 : 0;
+        cl[clRow] = e.which;
+        if (cl[0] == 17 && cl[1] == 76)
+            e.which = -1;
         switch (e.which) {
+            case -1:
+                clearWin()
+                break;
             case 13:
                 execute(String.fromCharCode(e.which));
                 break;
