@@ -101,7 +101,7 @@ var subsytem = {
         this.env.push({name: "PWD", value: "/home/user"});
         this.env.push({name: "OLDPWD", value: "/home/user"});
         this.env.push({name: "PATH", value: "/bin"});
-        this.env.push({name: "MAIL", value: "gregoire.guemas@epitech.eu"}); //TODO add dynamic value
+        this.env.push({name: "MAIL", value: "gregoire.guemas@navispeed.eu"}); //TODO add dynamic value
         this.env.get = function (name) {
             for (var i = 0; i < this.length; ++i) {
                 if (this[i].name == name) {
