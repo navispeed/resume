@@ -58,7 +58,7 @@ function execute(str) {
     }
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
-    subsytem.execute($actualLine.text());
+    subsytem.execute($actualLine.text().replace("\r", ""));
     write("");
     window.scrollTo(0, 4000000);
 }
