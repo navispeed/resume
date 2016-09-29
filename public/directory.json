@@ -15,6 +15,11 @@
           "desc": "List directory contents"
         },
         {
+          "name": "ctrl-l",
+          "permission": 7,
+          "desc": "Clear window"
+        },
+        {
           "name": "help",
           "permission": 7,
           "desc": "Show this message"
@@ -30,9 +35,19 @@
           "desc": "Send a mail to the authors"
         },
         {
+          "name": "clear",
+          "permission": 7,
+          "desc": "Clear the window"
+        },
+        {
           "name": "poweroff",
           "permission": 7,
           "desc": "Shutdown the machine"
+        },
+        {
+          "name": "cat 'file'",
+          "permission": 7,
+          "desc": "Displays file contained"
         },
         {
           "name": "github",

@@ -159,6 +159,5 @@ var subsytem = {
         this.initEnv();
     },
 };
-
 subsytem.init();
 console.log("Subsytem Loaded");
