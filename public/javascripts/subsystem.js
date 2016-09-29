@@ -11,21 +11,17 @@ var subsytem = {
         var res = [];
         var pwd = this.system;
 
-        console.log("system: ", this.system);
         var split = path.split("/");
         try {
             split.forEach(function (folder) {
                 if (folder == "")
                     return;
-                console.log("j'accède à : <" + folder + ">");
                 pwd = pwd.get(folder);
-                console.log("pwd: ", pwd);
                 if (folder.permission == 0) {
                     throw "no permission for this folder (";
                 }
             });
         } catch (e) {
-            console.log("e: ", e);
             return [];
         }
         pwd.content.forEach(function (element) {
@@ -38,13 +34,10 @@ var subsytem = {
 
 
     execute: function (cmd) {
-        console.log("execute(cmd:" + cmd + ")");
         var args = cmd.split(" ");
         var binairieIn = this.getBinairieIn(this.env.get("PATH"));
 
-        for (var i = 0; i < binairieIn.length ; ++i) {
-            console.log("args[0]: <" + args[0] + ">", "binairieIn[" + i + "].name: <" + binairieIn[i].name + ">");
-            console.log(String(binairieIn[i].name).localeCompare(String(args[0])));
+        for (var i = 0; i < binairieIn.length; ++i) {
             if (String(binairieIn[i].name) == String(args[0])) {
                 binairieIn[i].execute(args.length, args);
                 return;
@@ -59,10 +52,7 @@ var subsytem = {
         }).done(function (msg) {
             subsytem.system = eval(msg);
             subsytem.system.get = function (name) {
-                console.log("get: ", name);
-                console.log("get 2: ", this);
                 for (var i = 0; i < this.content.length; ++i) {
-                    console.log("get 3: ", this.content[i].name);
                     if (this.content[i].name == name) {
                         return this.content[i];
                     }
@@ -70,7 +60,6 @@ var subsytem = {
                 return undefined;
             };
             function assignFunction(directory) {
-                console.log("directory: ", directory);
                 for (var i = 0; i < directory.content.length; ++i) {
                     var child = directory.content[i];
                     if (child.content == undefined) {
@@ -81,6 +70,7 @@ var subsytem = {
                     }
                 }
             }
+
             assignFunction(subsytem.system)
         });
     },
