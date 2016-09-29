@@ -20,7 +20,6 @@ function extracted() {
 }
 
 function write(str, color) {
-
     var $actualLine = $("#line" + lineNumber);
     extracted();
     $actualLine.text(($actualLine.text() + str));
@@ -64,7 +63,13 @@ function makeIntro() {
     var j = 0;
 
     function writeBoot() {
-        LineIntro.html("<h3></h3>");
+        setTimeout(function () {
+            LineIntro.html(LineIntro.html() + "<h3>Loading Linux Kernel</h3>");
+        }, 1000);
+        setTimeout(function () {
+            LineIntro.html(LineIntro.html() + "<h3>Booting into Linux</h3>");
+        }, 2000);
+
     }
 
     function writeLine() {
@@ -82,7 +87,9 @@ function makeIntro() {
         }
 
     }
-    writeLine();
+
+    writeBoot();
+    setTimeout(writeLine, 3000);
 }
 
 $(document).keydown(function (e) {
