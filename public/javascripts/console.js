@@ -4,6 +4,7 @@
 
 var lineNumber = 1;
 var name = "";
+var innib = 0;
 
 function blinkingCursor() {
     var cont = $("#cursor");
@@ -21,12 +22,14 @@ function extracted() {
 
 function write(str, color) {
     var $actualLine = $("#line" + lineNumber);
+    extracted();
     if ($actualLine[0] == undefined) {
         $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
         $actualLine = $("#line" + (lineNumber));
+        $actualLine.text(($actualLine.text() + str));
         lineNumber++;
+        return
     }
-    extracted();
     $actualLine.text(($actualLine.text() + str));
     $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
 }
@@ -94,6 +97,7 @@ function makeIntro() {
             $cursor.show();
             $line1.show();
             window.scrollTo(0, 4000000);
+            innib = 1;
         }
 
     }
@@ -103,16 +107,18 @@ function makeIntro() {
 }
 
 $(document).keydown(function (e) {
-    switch (e.which) {
-        case 13:
-            execute(String.fromCharCode(e.which));
-            break;
-        case 8:
-            backspace()
-            break;
-        default:
-            write(String.fromCharCode(e.which).toLowerCase());
-    }
+    if (innib == 1) {
+        switch (e.which) {
+            case 13:
+                execute(String.fromCharCode(e.which));
+                break;
+            case 8:
+                backspace()
+                break;
+            default:
+                write(String.fromCharCode(e.which).toLowerCase());
+        }
+}
 });
 setInterval(blinkingCursor, 1000);
 window.onload = makeIntro;
