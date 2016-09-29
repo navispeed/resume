@@ -40,7 +40,7 @@ function execute(str) {
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
     subsytem.execute($actualLine.text());
-    window.scrollTo(0, 4000);
+    window.scrollTo(0, 4000000);
 }
 
 function backspace() {
@@ -52,20 +52,28 @@ function backspace() {
 
 function makeIntro() {
     document.getElementById("line0").style.visibility = "visible";
-    $("#cursor").hide();
-    $("#line1").hide();
-    var LineIntro = $("#line0");
-    var textIntro = $("#line0").text().split("\n");
+    var $cursor = $("#cursor");
+    var $line1 = $("#line1");
+    var $line0 = $("#line0");
+    $cursor.hide();
+    $line1.hide();
+    var LineIntro = $line0;
+    var textIntro = $line0.text().split("\n");
     LineIntro.text("");
     var buff;
-    for (var i = 0; textIntro.length != i; i++) {
-        buff = textIntro[i].replace("OK", "<span class='g'>OK</span>");
+    var j = 0;
+    function writeLine() {
+        buff = textIntro[j].replace("OK", "<span class='g'>OK</span>");
         buff = buff.replace("done", "<span class='g'>done</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
+        setTimeout(writeLine, Math.random() * 100 % 40 + 1);
+        window.scrollTo(0, 4000000);
+        ++j;
     }
-    $("#cursor").show();
-    $("#line1").show();
-    window.scrollTo(0, 4000);
+    writeLine();
+    $cursor.show();
+    $line1.show();
+    window.scrollTo(0, 4000000);
 }
 
 $(document).keydown(function (e) {
