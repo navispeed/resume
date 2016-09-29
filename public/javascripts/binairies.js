@@ -13,7 +13,7 @@ var binairies = {
     },
 
     help: function (ac, av) {
-        console.log("help");
+        console.log("help", write);
         write("You can't change directory :'), please contact me")
     }
 };

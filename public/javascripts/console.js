@@ -20,6 +20,7 @@ function extracted() {
 }
 
 function write(str, color) {
+    console.log("write(str:" + str + ")");
     var $actualLine = $("#line" + lineNumber);
     extracted();
     $actualLine.text(($actualLine.text() + str));
