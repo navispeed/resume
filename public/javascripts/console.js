@@ -34,7 +34,7 @@ function execute(str) {
         name = $actualLine.text().split(":")[1];
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
-    subsytem.execute(str); //TODO faire marcher cette ligne
+    subsytem.execute($actualLine.text());
 }
 
 function backspace() {
