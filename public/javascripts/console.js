@@ -34,7 +34,7 @@ function execute(str) {
         name = $actualLine.text().split(":")[1];
     $actualLine.text(($actualLine.text() + str));
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
-    subsytem.execute($actualLine.text());
+    subsytem.execute($actualLine.text().replace("\n", ""));
 }
 
 function backspace() {
@@ -78,7 +78,7 @@ $(document).keydown(function (e) {
             backspace()
             break;
         default:
-            write(String.fromCharCode(e.which));
+            write(String.fromCharCode(e.which).toLowerCase());
     }
 });
 setInterval(blinkingCursor, 1000);

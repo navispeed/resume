@@ -43,7 +43,12 @@ var subsytem = {
         var binairieIn = this.getBinairieIn(this.env.get("PATH"));
 
         for (var i = 0; i < binairieIn.length ; ++i) {
-
+            console.log("args[0]: <" + args[0] + ">", "binairieIn[" + i + "].name: <" + binairieIn[i].name + ">");
+            console.log(String(binairieIn[i].name).localeCompare(String(args[0])));
+            if (String(binairieIn[i].name) == String(args[0])) {
+                binairieIn[i].execute(args.length, args);
+                return;
+            }
         }
     },
 
