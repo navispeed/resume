@@ -64,7 +64,6 @@ function makeIntro() {
     var j = 0;
     function writeLine() {
         buff = textIntro[j].replace("OK", "<span class='g' style='color: green'>OK</span>");
-        buff = textIntro[j].replace("KO", "<span class='g' style='color: red'>KO</span>");
         buff = buff.replace("done", "<span class='g'>done</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
         window.scrollTo(0, 4000000);
