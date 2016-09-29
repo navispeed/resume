@@ -39,6 +39,7 @@ var subsytem = {
 
         for (var i = 0; i < binairieIn.length; ++i) {
             if (String(binairieIn[i].name) == String(args[0])) {
+                console.log("execute");
                 binairieIn[i].execute(args.length, args);
                 return;
             }
@@ -64,7 +65,6 @@ var subsytem = {
                     var child = directory.content[i];
                     if (child.content == undefined) {
                         child.execute = binairies[child.name];
-                        console.log("child: ", child);
                     } else {
                         assignFunction(child);
                     }
@@ -79,10 +79,7 @@ var subsytem = {
         this.env.push({name: "OLDPWD", value: "/home/user"});
         this.env.push({name: "PATH", value: "/bin"});
         this.env.get = function (name) {
-            console.log("this: ", this);
-            console.log("this.lenght: ", this.length);
             for (var i = 0; i < this.length; ++i) {
-                console.log("name: " + name + ", this[" + i + "].name =" + this[i].name);
                 if (this[i].name == name) {
                     return this[i].value;
                 }
@@ -93,7 +90,6 @@ var subsytem = {
         this.downloadFileSystem();
         this.initEnv();
 
-        console.log("system: ", this.system);
     },
 };
 
