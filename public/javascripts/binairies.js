@@ -9,6 +9,6 @@ var binairies = {
     },
 
     cd: function (ac, av) {
-
+        write("You can't change directory :'), please contact me")
     }
 };

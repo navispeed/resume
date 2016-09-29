@@ -1,16 +1,1152 @@
-Salut
-kdokd
-d
-d
-dkfgokroforf
-sdkfoksdfk
-sdfosdkfsdf
-dspf
-sdqf
-qsd
-f
-sd
-f
-qsd
-f
-skdokfodkfkdfkdfoodf
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd-journald[335]: Runtime journal (/run/log/journal/) is 8.0M, max 160.3M, 152.3M free.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys cpuset
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys cpu
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys cpuacct
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Linux version 4.4.0-22-generic (buildd@lgw01-41) (gcc version 5.3.1 20160413 (Ubuntu 5.3.1-14ubuntu2) ) #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 (Ubuntu 4.4.0-22.40-generic 4.4.8)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-22-generic root=UUID=3522a6a2-f618-4267-9c9b-fb080fcfe1f0 ro net.ifnames=0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: KERNEL supported cpus:
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   Intel GenuineIntel
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   AMD AuthenticAMD
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   Centaur CentaurHauls
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: x86/fpu: Legacy x87 FPU detected.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: x86/fpu: Using 'lazy' FPU context switches.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: BIOS-provided physical RAM map:
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009d7ff] usable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x000000000009d800-0x000000000009ffff] reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000df77ffff] usable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x00000000df78e000-0x00000000df78ffff] type 9
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x00000000df790000-0x00000000df79dfff] ACPI data
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x00000000df79e000-0x00000000df7cffff] ACPI NVS
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x00000000df7d0000-0x00000000df7dffff] reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x00000000df7ec000-0x00000000efffffff] reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x00000000ffc00000-0x00000000ffffffff] reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS-e820: [mem 0x0000000100000000-0x000000041fffffff] usable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NX (Execute Disable) protection: active
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: SMBIOS 2.6 present.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: DMI: Supermicro X8STi/X8STi, BIOS 2.0        09/17/10  
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: last_pfn = 0x420000 max_arch_pfn = 0x400000000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: MTRR default type: uncachable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: MTRR fixed ranges enabled:
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   00000-9FFFF write-back
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   A0000-BFFFF uncachable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   C0000-CBFFF write-protect
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   CC000-DFFFF uncachable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   E0000-E3FFF write-protect
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   E4000-EFFFF write-through
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   F0000-FFFFF write-protect
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: MTRR variable ranges enabled:
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   0 base 000000000 mask C00000000 write-back
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   1 base 400000000 mask FE0000000 write-back
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   2 base 0E0000000 mask FE0000000 uncachable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   3 base 0DF800000 mask FFF800000 uncachable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   4 disabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   5 disabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   6 disabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   7 disabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WC  UC- WT  
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: original variable MTRRs
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 0, base: 0GB, range: 16GB, type WB
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 1, base: 16GB, range: 512MB, type WB
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 2, base: 3584MB, range: 512MB, type UC
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 3, base: 3576MB, range: 8MB, type UC
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: total RAM covered: 16376M
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Found optimal setting for mtrr clean up
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:  gran_size: 64K         chunk_size: 16M         num_reg: 7          lose cover RAM: 0G
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: New variable MTRRs
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 0, base: 0GB, range: 2GB, type WB
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 1, base: 2GB, range: 1GB, type WB
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 2, base: 3GB, range: 512MB, type WB
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 3, base: 3576MB, range: 8MB, type UC
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 4, base: 4GB, range: 4GB, type WB
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 5, base: 8GB, range: 8GB, type WB
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: reg 6, base: 16GB, range: 512MB, type WB
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: update [mem 0xdf800000-0xffffffff] usable ==> reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: last_pfn = 0xdf780 max_arch_pfn = 0x400000000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: found SMP MP-table at [mem 0x000ff780-0x000ff78f] mapped at [ffff8800000ff780]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Scanning 1 areas for low memory corruption
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Base memory trampoline at [ffff880000097000] 97000 size 24576
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BRK [0x021ff000, 0x021fffff] PGTABLE
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BRK [0x02200000, 0x02200fff] PGTABLE
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BRK [0x02201000, 0x02201fff] PGTABLE
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BRK [0x02202000, 0x02202fff] PGTABLE
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BRK [0x02203000, 0x02203fff] PGTABLE
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BRK [0x02204000, 0x02204fff] PGTABLE
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: RAMDISK: [mem 0x33e9a000-0x35f44fff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Early table checksum verification disabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: RSDP 0x00000000000FAAB0 000024 (v02 ACPIAM)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: XSDT 0x00000000DF790100 00007C (v01 SMCI            20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: FACP 0x00000000DF790290 0000F4 (v04 091710 FACP1846 20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 128/64 (20150930/tbfadt-623)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: DSDT 0x00000000DF790630 0066F5 (v02 10009  10009000 00000000 INTL 20051117)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: FACS 0x00000000DF79E000 000040
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: FACS 0x00000000DF79E000 000040
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: APIC 0x00000000DF790390 0000D2 (v02 091710 APIC1846 20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: MCFG 0x00000000DF790470 00003C (v01 091710 OEMMCFG  20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: OEMB 0x00000000DF79E040 00007B (v01 091710 OEMB1846 20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: HPET 0x00000000DF79A630 000038 (v01 091710 OEMHPET  20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: DMAR 0x00000000DF79E0C0 000128 (v01 AMI    OEMDMAR  00000001 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: SSDT 0x00000000DF7A0A90 000363 (v01 DpgPmm CpuPm    00000012 INTL 20051117)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: EINJ 0x00000000DF79A670 000130 (v01 AMIER  AMI_EINJ 20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: BERT 0x00000000DF79A800 000030 (v01 AMIER  AMI_BERT 20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: ERST 0x00000000DF79A830 0001B0 (v01 AMIER  AMI_ERST 20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: HEST 0x00000000DF79A9E0 0000A8 (v01 AMIER  ABC_HEST 20100917 MSFT 00000097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Local APIC address 0xfee00000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: No NUMA configuration found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Faking a node at [mem 0x0000000000000000-0x000000041fffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NODE_DATA(0) allocated [mem 0x41ffed000-0x41fff1fff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Zone ranges:
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   Normal   [mem 0x0000000100000000-0x000000041fffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   Device   empty
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Movable zone start for each node
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Early memory node ranges
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   node   0: [mem 0x0000000000001000-0x000000000009cfff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   node   0: [mem 0x0000000000100000-0x00000000df77ffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   node   0: [mem 0x0000000100000000-0x000000041fffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000041fffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: On node 0 totalpages: 4192028
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   DMA zone: 64 pages used for memmap
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   DMA zone: 21 pages reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   DMA zone: 3996 pages, LIFO batch:0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   DMA32 zone: 14238 pages used for memmap
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   DMA32 zone: 911232 pages, LIFO batch:31
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   Normal zone: 51200 pages used for memmap
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   Normal zone: 3276800 pages, LIFO batch:31
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PM-Timer IO Port: 0x808
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Local APIC address 0xfee00000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: IOAPIC[0]: apic_id 8, version 32, address 0xfec00000, GSI 0-23
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: IRQ0 used by override.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: IRQ9 used by override.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Using ACPI (MADT) for SMP configuration information
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: HPET id: 0x8086a301 base: 0xfed00000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: smpboot: Allowing 16 CPUs, 8 hotplug CPUs
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0x0009d000-0x0009dfff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xdf780000-0xdf78dfff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xdf78e000-0xdf78ffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xdf790000-0xdf79dfff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xdf79e000-0xdf7cffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xdf7d0000-0xdf7dffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xdf7e0000-0xdf7ebfff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xdf7ec000-0xefffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xf0000000-0xfedfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xfee01000-0xffbfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registered nosave memory: [mem 0xffc00000-0xffffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: [mem 0xf0000000-0xfedfffff] available for PCI devices
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Booting paravirtualized kernel on bare hardware
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:16 nr_node_ids:1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PERCPU: Embedded 33 pages/cpu @ffff88040f200000 s98008 r8192 d28968 u262144
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pcpu-alloc: s98008 r8192 d28968 u262144 alloc=1*2097152
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15 
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Built 1 zonelists in Node order, mobility grouping on.  Total pages: 4126505
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Policy zone: Normal
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-22-generic root=UUID=3522a6a2-f618-4267-9c9b-fb080fcfe1f0 ro net.ifnames=0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PID hash table entries: 4096 (order: 3, 32768 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Calgary: detecting Calgary via BIOS EBDA area
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Memory: 16385492K/16768112K available (8359K kernel code, 1278K rwdata, 3920K rodata, 1480K init, 1292K bss, 382620K reserved, 0K cma-reserved)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Hierarchical RCU implementation.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:         Build-time adjustment of leaf fanout to 64.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:         RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=16.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=16
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NR_IRQS:16640 nr_irqs:552 16
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Console: colour dummy device 80x25
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: console [tty0] enabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hpet clockevent registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: tsc: Fast TSC calibration using PIT
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: tsc: Detected 3066.500 MHz processor
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 6133.00 BogoMIPS (lpj=12266000)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pid_max: default: 32768 minimum: 301
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Core revision 20150930
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Security Framework initialized
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Yama: becoming mindful.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: AppArmor: AppArmor initialized
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys io
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys memory
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys devices
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys freezer
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys net_cls
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys perf_event
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys net_prio
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys hugetlb
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initializing cgroup subsys pids
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: CPU: Physical Processor ID: 0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: CPU: Processor Core ID: 0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: mce: CPU supports 9 MCE banks
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: CPU0: Thermal monitoring enabled (TM1)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: process: using mwait in idle threads
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Last level iTLB entries: 4KB 512, 2MB 7, 4MB 7
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32, 1GB 0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Freeing SMP alternatives memory: 28K (ffffffff820b3000 - ffffffff820ba000)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ftrace: allocating 31906 entries in 125 pages
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: smpboot: Max logical packages: 4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: smpboot: APIC(0) Converting physical 0 to logical package 0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: DMAR-IR: This system BIOS has enabled interrupt remapping
+                                                    on a chipset that contains an erratum making that
+                                                    feature unstable.  To maintain system stability
+                                                    interrupt remapping is being disabled.  Please
+                                                    contact your BIOS vendor for an update
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Switched APIC routing to physical flat.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: smpboot: CPU0: Intel(R) Core(TM) i7 CPU         950  @ 3.07GHz (family: 0x6, model: 0x1a, stepping: 0x5)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Performance Events: PEBS fmt1+, 16-deep LBR, Nehalem events, Intel PMU driver.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: core: CPU erratum AAJ80 worked around
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: core: CPUID marked event: 'bus cycles' unavailable
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ... version:                3
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ... bit width:              48
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ... generic registers:      4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ... value mask:             0000ffffffffffff
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ... max period:             000000007fffffff
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ... fixed-purpose events:   3
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ... event mask:             000000070000000f
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: x86: Booting SMP configuration:
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: .... node  #0, CPUs:        #1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NMI watchdog: enabled on all CPUs, permanently consumes one hw-PMU counter.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   #2  #3  #4  #5  #6  #7
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: x86: Booted up 1 node, 8 CPUs
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: smpboot: Total of 8 processors activated (49064.00 BogoMIPS)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: devtmpfs: initialized
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: evm: security.selinux
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: evm: security.SMACK64
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: evm: security.SMACK64EXEC
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: evm: security.SMACK64TRANSMUTE
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: evm: security.SMACK64MMAP
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: evm: security.ima
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: evm: security.capability
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Registering ACPI NVS region [mem 0xdf79e000-0xdf7cffff] (204800 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pinctrl core: initialized pinctrl subsystem
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: RTC time: 13:44:53, date: 09/29/16
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NET: Registered protocol family 16
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: cpuidle: using governor ladder
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: cpuidle: using governor menu
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCCT header not found.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: bus type PCI registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in E820
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: Using configuration type 1 for base access
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Added _OSI(Module Device)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Added _OSI(Processor Device)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Added _OSI(Processor Aggregator Device)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Executed 1 blocks of module-level executable AML code
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Dynamic OEM Table Load:
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: SSDT 0xFFFF88040C8FC000 00223C (v01 DpgPmm P001Ist  00000011 INTL 20051117)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Dynamic OEM Table Load:
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: SSDT 0xFFFF88040CDD1800 000659 (v01 PmRef  P001Cst  00003001 INTL 20051117)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Interpreter enabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: (supports S0 S1 S4 S5)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Using IOAPIC for interrupt routing
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: HEST: Table parsing has been initialized.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: acpi PNP0A08:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI host bridge to bus 0000:00
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000dffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfed8ffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:00.0: [8086:3405] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:00.0: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0: [8086:3408] type 01 class 0x060400
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0: [8086:3409] type 01 class 0x060400
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:03.0: [8086:340a] type 01 class 0x060400
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:03.0: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:03.0: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:07.0: [8086:340e] type 01 class 0x060400
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:07.0: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:07.0: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:09.0: [8086:3410] type 01 class 0x060400
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:09.0: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:09.0: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:14.0: [8086:342e] type 00 class 0x080000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:14.1: [8086:3422] type 00 class 0x080000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:14.2: [8086:3423] type 00 class 0x080000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:14.3: [8086:3438] type 00 class 0x080000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.0: [8086:3430] type 00 class 0x088000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.0: reg 0x10: [mem 0xfbef8000-0xfbefbfff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.1: [8086:3431] type 00 class 0x088000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.1: reg 0x10: [mem 0xfbef4000-0xfbef7fff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.2: [8086:3432] type 00 class 0x088000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.2: reg 0x10: [mem 0xfbef0000-0xfbef3fff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.3: [8086:3433] type 00 class 0x088000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.3: reg 0x10: [mem 0xfbeec000-0xfbeeffff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.4: [8086:3429] type 00 class 0x088000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.4: reg 0x10: [mem 0xfbee8000-0xfbeebfff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.5: [8086:342a] type 00 class 0x088000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.5: reg 0x10: [mem 0xfbee4000-0xfbee7fff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.6: [8086:342b] type 00 class 0x088000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.6: reg 0x10: [mem 0xfbee0000-0xfbee3fff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.7: [8086:342c] type 00 class 0x088000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:16.7: reg 0x10: [mem 0xfbedc000-0xfbedffff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.0: [8086:3a37] type 00 class 0x0c0300
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.0: reg 0x20: [io  0xcc00-0xcc1f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.0: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.1: [8086:3a38] type 00 class 0x0c0300
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.1: reg 0x20: [io  0xc880-0xc89f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.1: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.2: [8086:3a39] type 00 class 0x0c0300
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.2: reg 0x20: [io  0xc800-0xc81f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.2: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.7: [8086:3a3c] type 00 class 0x0c0320
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.7: reg 0x10: [mem 0xfbeda000-0xfbeda3ff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.7: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1a.7: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.0: [8086:3a34] type 00 class 0x0c0300
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.0: reg 0x20: [io  0xc480-0xc49f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.0: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.1: [8086:3a35] type 00 class 0x0c0300
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.1: reg 0x20: [io  0xc400-0xc41f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.1: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.2: [8086:3a36] type 00 class 0x0c0300
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.2: reg 0x20: [io  0xc080-0xc09f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.2: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.7: [8086:3a3a] type 00 class 0x0c0320
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.7: reg 0x10: [mem 0xfbed8000-0xfbed83ff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1d.7: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0: [8086:244e] type 01 class 0x060401
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0: System wakeup disabled by ACPI
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.0: [8086:3a16] type 00 class 0x060100
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.0: can't claim BAR 13 [io  0x0800-0x087f]: address conflict with ACPI CPU throttle [io  0x0810-0x0815]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.0: quirk: [io  0x0500-0x053f] claimed by ICH6 GPIO
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.0: ICH7 LPC Generic IO decode 1 PIO at 4700 (mask 0097)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.0: ICH7 LPC Generic IO decode 2 PIO at 03e8 (mask 000f)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.0: ICH7 LPC Generic IO decode 3 PIO at 1640 (mask 000f)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.0: ICH7 LPC Generic IO decode 4 PIO at 0ca0 (mask 000f)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.2: [8086:3a22] type 00 class 0x010601
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.2: reg 0x10: [io  0xb480-0xb487]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.2: reg 0x14: [io  0xc000-0xc003]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.2: reg 0x18: [io  0xbc00-0xbc07]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.2: reg 0x1c: [io  0xb880-0xb883]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.2: reg 0x20: [io  0xb800-0xb81f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.2: reg 0x24: [mem 0xfbed6000-0xfbed67ff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.2: PME# supported from D3hot
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.3: [8086:3a30] type 00 class 0x0c0500
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.3: reg 0x10: [mem 0xfbed4000-0xfbed40ff 64bit]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.3: reg 0x20: [io  0x0400-0x041f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:01:00.0: [8086:10d3] type 00 class 0x020000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:01:00.0: reg 0x10: [mem 0xfbce0000-0xfbcfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:01:00.0: reg 0x18: [io  0xdc00-0xdc1f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:01:00.0: reg 0x1c: [mem 0xfbcdc000-0xfbcdffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0:   bridge window [io  0xd000-0xdfff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0:   bridge window [mem 0xfbc00000-0xfbcfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:02:00.0: [8086:10d3] type 00 class 0x020000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:02:00.0: reg 0x10: [mem 0xfbde0000-0xfbdfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:02:00.0: reg 0x18: [io  0xec00-0xec1f]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:02:00.0: reg 0x1c: [mem 0xfbddc000-0xfbddffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0: PCI bridge to [bus 02]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0:   bridge window [io  0xe000-0xefff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0:   bridge window [mem 0xfbd00000-0xfbdfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:03.0: PCI bridge to [bus 03]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:07.0: PCI bridge to [bus 04]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:09.0: PCI bridge to [bus 05]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:06:04.0: [102b:0532] type 00 class 0x030000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:06:04.0: reg 0x10: [mem 0xf9800000-0xf9ffffff pref]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:06:04.0: reg 0x14: [mem 0xfaffc000-0xfaffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:06:04.0: reg 0x18: [mem 0xfb000000-0xfb7fffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0: PCI bridge to [bus 06] (subtractive decode)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [mem 0xfaf00000-0xfb7fffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [mem 0xf9800000-0xf9ffffff 64bit pref]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [io  0x0000-0x0cf7 window] (subtractive decode)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [io  0x0d00-0xffff window] (subtractive decode)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [mem 0x000a0000-0x000bffff window] (subtractive decode)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [mem 0x000d0000-0x000dffff window] (subtractive decode)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [mem 0xf0000000-0xfed8ffff window] (subtractive decode)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 6 7 10 11 12 14 *15)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 6 7 10 11 12 *14 15)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 6 7 *10 11 12 14 15)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 6 7 10 *11 12 14 15)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 6 7 10 11 12 14 15) *0, disabled.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Interrupt Link [LNKF] (IRQs *3 4 6 7 10 11 12 14 15)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 6 7 10 11 12 14 15) *0, disabled.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 6 *7 10 11 12 14 15)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Enabled 1 GPEs in block 00 to 3F
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: vgaarb: setting as boot device: PCI:0000:06:04.0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: vgaarb: device added: PCI:0000:06:04.0,decodes=io+mem,owns=io+mem,locks=none
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: vgaarb: loaded
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: vgaarb: bridge control possible 0000:06:04.0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: SCSI subsystem initialized
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: libata version 3.00 loaded.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: bus type USB registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usbcore: registered new interface driver usbfs
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usbcore: registered new interface driver hub
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usbcore: registered new device driver usb
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: Using ACPI for IRQ routing
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: Discovered peer bus ff
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: root bus ff: using default resources
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: Probing PCI hardware (bus ff)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: \: failed to evaluate _DSM (0x1001)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI host bridge to bus 0000:ff
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:ff: root bus resource [io  0x0000-0xffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:ff: root bus resource [mem 0x00000000-0xfffffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:ff: No busn resource found for root bus, will use [bus ff-ff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:ff: busn_res: can not insert [bus ff] under domain [bus 00-ff] (conflicts with (null) [bus 00-ff])
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:00.0: [8086:2c41] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:00.1: [8086:2c01] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:02.0: [8086:2c10] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:02.1: [8086:2c11] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:03.0: [8086:2c18] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:03.1: [8086:2c19] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:03.4: [8086:2c1c] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:04.0: [8086:2c20] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:04.1: [8086:2c21] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:04.2: [8086:2c22] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:04.3: [8086:2c23] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:05.0: [8086:2c28] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:05.1: [8086:2c29] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:05.2: [8086:2c2a] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:05.3: [8086:2c2b] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:06.0: [8086:2c30] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:06.1: [8086:2c31] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:06.2: [8086:2c32] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:ff:06.3: [8086:2c33] type 00 class 0x060000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:ff: busn_res: [bus ff] end is updated to ff
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:ff: busn_res: can not insert [bus ff] under domain [bus 00-ff] (conflicts with (null) [bus 00-ff])
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: pci_cache_line_size set to 64 bytes
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: reserve RAM buffer [mem 0x0009d800-0x0009ffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e820: reserve RAM buffer [mem 0xdf780000-0xdfffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NetLabel: Initializing
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NetLabel:  domain hash size = 128
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NetLabel:  protocols = UNLABELED CIPSOv4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NetLabel:  unlabeled traffic allowed by default
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: HPET: 4 timers in total, 0 timers will be used for per-cpu timer
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hpet0: 4 comparators, 64-bit 14.318180 MHz counter
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: clocksource: Switched to clocksource hpet
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: AppArmor: AppArmor Filesystem Enabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pnp: PnP ACPI init
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:00: [mem 0xfbf00000-0xfbffffff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:00: [mem 0xfc000000-0xfcffffff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:00: [mem 0xfd000000-0xfdffffff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:00: [mem 0xfe000000-0xfebfffff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:00: [mem 0xfec8a000-0xfec8afff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:00: [mem 0xfed10000-0xfed10fff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:00: Plug and Play ACPI device, IDs PNP0c01 (active)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0b00 (active)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:02: [io  0x164e-0x164f] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:02: Plug and Play ACPI device, IDs PNP0c02 (active)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:03: [io  0x0a00-0x0a0f] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:03: [io  0x0ca0-0x0caf] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:03: Plug and Play ACPI device, IDs PNP0c02 (active)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:04: [io  0x04d0-0x04d1] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:04: [io  0x0800-0x087f] could not be reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:04: [io  0x0500-0x057f] could not be reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:04: [mem 0xfed1c000-0xfed1ffff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:04: [mem 0xfed20000-0xfed3ffff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:04: [mem 0xfed40000-0xfed8ffff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:04: Plug and Play ACPI device, IDs PNP0c02 (active)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:05: [mem 0xfec00000-0xfec00fff] could not be reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:05: [mem 0xfee00000-0xfee00fff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:05: Plug and Play ACPI device, IDs PNP0c02 (active)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:06: [mem 0xe0000000-0xefffffff] has been reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:06: Plug and Play ACPI device, IDs PNP0c02 (active)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:07: [mem 0x00000000-0x0009ffff] could not be reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:07: [mem 0x000c0000-0x000cffff] could not be reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:07: [mem 0x000e0000-0x000fffff] could not be reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:07: [mem 0x00100000-0xdfffffff] could not be reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:07: [mem 0xfed90000-0xffffffff] could not be reserved
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: system 00:07: Plug and Play ACPI device, IDs PNP0c01 (active)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pnp: PnP ACPI: found 8 devices
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1f.0: BAR 13: [io  size 0x0080] has bogus alignment
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0:   bridge window [io  0xd000-0xdfff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:01.0:   bridge window [mem 0xfbc00000-0xfbcfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0: PCI bridge to [bus 02]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0:   bridge window [io  0xe000-0xefff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:02.0:   bridge window [mem 0xfbd00000-0xfbdfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:03.0: PCI bridge to [bus 03]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:07.0: PCI bridge to [bus 04]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:09.0: PCI bridge to [bus 05]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0: PCI bridge to [bus 06]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [mem 0xfaf00000-0xfb7fffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:00:1e.0:   bridge window [mem 0xf9800000-0xf9ffffff 64bit pref]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: resource 7 [mem 0x000d0000-0x000dffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:00: resource 8 [mem 0xf0000000-0xfed8ffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:01: resource 0 [io  0xd000-0xdfff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:01: resource 1 [mem 0xfbc00000-0xfbcfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:02: resource 0 [io  0xe000-0xefff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:02: resource 1 [mem 0xfbd00000-0xfbdfffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:06: resource 1 [mem 0xfaf00000-0xfb7fffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:06: resource 2 [mem 0xf9800000-0xf9ffffff 64bit pref]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:06: resource 4 [io  0x0000-0x0cf7 window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:06: resource 5 [io  0x0d00-0xffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:06: resource 6 [mem 0x000a0000-0x000bffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:06: resource 7 [mem 0x000d0000-0x000dffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:06: resource 8 [mem 0xf0000000-0xfed8ffff window]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:ff: resource 4 [io  0x0000-0xffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_bus 0000:ff: resource 5 [mem 0x00000000-0xfffffffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NET: Registered protocol family 2
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: TCP: Hash tables configured (established 131072 bind 65536)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: UDP hash table entries: 8192 (order: 6, 262144 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NET: Registered protocol family 1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI: CLS mismatch (256 != 64), using 64 bytes
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci 0000:06:04.0: Video device with shadowed ROM
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Trying to unpack rootfs image as initramfs...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Freeing initrd memory: 33452K (ffff880033e9a000 - ffff880035f45000)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: DMAR: Host address width 39
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: DMAR: DRHD base: 0x000000fbffe000 flags: 0x1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: DMAR: dmar0: reg_base_addr fbffe000 ver 1:0 cap c90780106f0462 ecap f020f6
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: DMAR: RMRR base: 0x000000000ec000 end: 0x000000000effff
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: DMAR: RMRR base: 0x000000df7ec000 end: 0x000000df7fffff
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: DMAR: ATSR flags: 0x0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: software IO TLB [mem 0xdb780000-0xdf780000] (64MB) mapped at [ffff8800db780000-ffff8800df77ffff]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Scanning for low memory corruption every 60 seconds
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: futex hash table entries: 4096 (order: 6, 262144 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: audit: initializing netlink subsys (disabled)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: audit: type=2000 audit(1475156692.632:1): initialized
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Initialise system trusted keyring
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: HugeTLB registered 2 MB page size, pre-allocated 0 pages
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: zbud: loaded
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: VFS: Disk quotas dquot_6.6.0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: fuse init (API version 7.23)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Key type big_key registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Allocating IMA MOK and blacklist keyrings.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Key type asymmetric registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Asymmetric key parser 'x509' registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: io scheduler noop registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: io scheduler deadline registered (default)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: io scheduler cfq registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: vesafb: mode is 640x480x32, linelength=2560, pages=0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: vesafb: scrolling: redraw
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: vesafb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: vesafb: framebuffer at 0xf9800000, mapped to 0xffffc90001c00000, using 1216k, total 1216k
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Console: switching to colour frame buffer device 80x30
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: fb0: VESA VGA frame buffer device
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: intel_idle: MWAIT substates: 0x1120
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: intel_idle: v0.4.1 model 0x1A
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: intel_idle: lapic_timer_reliable_states 0x2
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Power Button [PWRB]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ACPI: Power Button [PWRF]
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ERST: Failed to get Error Log Address Range.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: [Firmware Warn]: GHES: Poll interval is 0 for generic hardware error source: 1, disabled.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: GHES: APEI firmware first mode is enabled by WHEA _OSC.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Linux agpgart interface v0.103
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: brd: module loaded
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: loop: module loaded
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: libphy: Fixed MDIO Bus: probed
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: tun: Universal TUN/TAP device driver, 1.6
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PPP generic driver version 2.4.2
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci: EHCI PCI platform driver
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1a.7: EHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1a.7: new USB bus registered, assigned bus number 1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1a.7: debug port 1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1a.7: cache line size of 64 is not supported
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1a.7: irq 18, io mem 0xfbeda000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1a.7: USB 2.0 started, EHCI 1.00
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb1: Product: EHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb1: Manufacturer: Linux 4.4.0-22-generic ehci_hcd
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb1: SerialNumber: 0000:00:1a.7
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: tsc: Refined TSC clocksource calibration: 3066.666 MHz
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2c34469b3ec, max_idle_ns: 440795286947 ns
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 1-0:1.0: USB hub found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 1-0:1.0: 6 ports detected
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1d.7: EHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1d.7: new USB bus registered, assigned bus number 2
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1d.7: debug port 1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1d.7: cache line size of 64 is not supported
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1d.7: irq 23, io mem 0xfbed8000
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-pci 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb2: Product: EHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb2: Manufacturer: Linux 4.4.0-22-generic ehci_hcd
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb2: SerialNumber: 0000:00:1d.7
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 2-0:1.0: USB hub found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 2-0:1.0: 6 ports detected
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ehci-platform: EHCI generic platform driver
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ohci-pci: OHCI PCI platform driver
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ohci-platform: OHCI generic platform driver
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd: USB Universal Host Controller Interface driver
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.0: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.0: new USB bus registered, assigned bus number 3
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.0: detected 2 ports
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.0: irq 16, io base 0x0000cc00
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb3: Product: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb3: Manufacturer: Linux 4.4.0-22-generic uhci_hcd
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb3: SerialNumber: 0000:00:1a.0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 3-0:1.0: USB hub found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 3-0:1.0: 2 ports detected
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.1: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.1: new USB bus registered, assigned bus number 4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.1: detected 2 ports
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.1: irq 21, io base 0x0000c880
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb4: Product: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb4: Manufacturer: Linux 4.4.0-22-generic uhci_hcd
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb4: SerialNumber: 0000:00:1a.1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 4-0:1.0: USB hub found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 4-0:1.0: 2 ports detected
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.2: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.2: new USB bus registered, assigned bus number 5
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.2: detected 2 ports
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1a.2: irq 19, io base 0x0000c800
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb5: Product: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb5: Manufacturer: Linux 4.4.0-22-generic uhci_hcd
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb5: SerialNumber: 0000:00:1a.2
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 5-0:1.0: USB hub found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 5-0:1.0: 2 ports detected
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.0: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 6
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.0: detected 2 ports
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000c480
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb6: New USB device found, idVendor=1d6b, idProduct=0001
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb6: Product: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb6: Manufacturer: Linux 4.4.0-22-generic uhci_hcd
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb6: SerialNumber: 0000:00:1d.0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 6-0:1.0: USB hub found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 6-0:1.0: 2 ports detected
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.1: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 7
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.1: detected 2 ports
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000c400
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb7: New USB device found, idVendor=1d6b, idProduct=0001
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb7: Product: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb7: Manufacturer: Linux 4.4.0-22-generic uhci_hcd
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb7: SerialNumber: 0000:00:1d.1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 7-0:1.0: USB hub found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 7-0:1.0: 2 ports detected
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.2: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 8
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.2: detected 2 ports
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000c080
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb8: New USB device found, idVendor=1d6b, idProduct=0001
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb8: Product: UHCI Host Controller
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb8: Manufacturer: Linux 4.4.0-22-generic uhci_hcd
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: usb usb8: SerialNumber: 0000:00:1d.2
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 8-0:1.0: USB hub found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: hub 8-0:1.0: 2 ports detected
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: i8042: PNP: No PS/2 controller found. Probing ports directly.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: mousedev: PS/2 mouse device common for all mice
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: rtc_cmos 00:01: RTC can wake from S4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: rtc_cmos 00:01: rtc core: registered rtc_cmos as rtc0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: rtc_cmos 00:01: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: i2c /dev entries driver
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: device-mapper: uevent: version 1.0.3
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ledtrig-cpu: registered to indicate activity on CPUs
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NET: Registered protocol family 10
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: NET: Registered protocol family 17
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Key type dns_resolver registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: CPU0 sig=0x106a5, pf=0x2, revision=0x11
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: CPU1 sig=0x106a5, pf=0x2, revision=0x11
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: CPU2 sig=0x106a5, pf=0x2, revision=0x11
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: CPU3 sig=0x106a5, pf=0x2, revision=0x11
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: CPU4 sig=0x106a5, pf=0x2, revision=0x11
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: CPU5 sig=0x106a5, pf=0x2, revision=0x11
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: CPU6 sig=0x106a5, pf=0x2, revision=0x11
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: CPU7 sig=0x106a5, pf=0x2, revision=0x11
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: registered taskstats version 1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Loading compiled-in X.509 certificates
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 10281ca0c0463cd0680138fff55319c9bd7d63b8'
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: zswap: loaded using pool lzo/zbud
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Key type trusted registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Key type encrypted registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: AppArmor: AppArmor sha1 policy hashing enabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ima: No TPM chip found, activating TPM-bypass!
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: evm: HMAC attrs: 0x1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:   Magic number: 0:262:737
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: rtc_cmos 00:01: setting system clock to 2016-09-29 13:44:54 UTC (1475156694)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: EDD information not available.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PM: Hibernation image not present or could not be loaded.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Freeing unused kernel memory: 1480K (ffffffff81f41000 - ffffffff820b3000)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Write protecting the kernel read-only data: 14336k
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Freeing unused kernel memory: 1868K (ffff88000182d000 - ffff880001a00000)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Freeing unused kernel memory: 176K (ffff880001dd4000 - ffff880001e00000)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: random: systemd-udevd urandom read with 7 bits of entropy available
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: FUJITSU Extended Socket Network Device Driver - version 1.0 - Copyright (c) 2015 FUJITSU LIMITED
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pps_core: LinuxPPS API ver. 1 registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ahci 0000:00:1f.2: version 3.0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ahci 0000:00:1f.2: SSS flag set, parallel bus scan disabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ahci 0000:00:1f.2: AHCI 0001.0200 32 slots 6 ports 3 Gbps 0x3f impl SATA mode
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ahci 0000:00:1f.2: flags: 64bit ncq sntf stag pm led clo pio slum part ccc ems sxs 
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: PTP clock support registered
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: scsi host0: ahci
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: scsi host1: ahci
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: scsi host2: ahci
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: scsi host3: ahci
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: scsi host4: ahci
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: scsi host5: ahci
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata1: SATA max UDMA/133 abar m2048@0xfbed6000 port 0xfbed6100 irq 24
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata2: SATA max UDMA/133 abar m2048@0xfbed6000 port 0xfbed6180 irq 24
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata3: SATA max UDMA/133 abar m2048@0xfbed6000 port 0xfbed6200 irq 24
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata4: SATA max UDMA/133 abar m2048@0xfbed6000 port 0xfbed6280 irq 24
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata5: SATA max UDMA/133 abar m2048@0xfbed6000 port 0xfbed6300 irq 24
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata6: SATA max UDMA/133 abar m2048@0xfbed6000 port 0xfbed6380 irq 24
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: clocksource: Switched to clocksource tsc
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:01:00.0: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata1.00: ATA-8: HGST HUS724020ALA640, MF6OABY0, max UDMA/133
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata1.00: 3907029168 sectors, multi 0: LBA48 NCQ (depth 31/32), AA
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata1.00: configured for UDMA/133
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: scsi 0:0:0:0: Direct-Access     ATA      HGST HUS724020AL ABY0 PQ: 0 ANSI: 5
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:01:00.0 eth0: registered PHC clock
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:01:00.0 eth0: (PCI Express:2.5GT/s:Width x1) 00:25:90:71:75:02
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:01:00.0 eth0: Intel(R) PRO/1000 Network Connection
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:01:00.0 eth0: MAC: 3, PHY: 8, PBA No: 0101FF-0FF
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:02:00.0: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: sd 0:0:0:0: [sda] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: sd 0:0:0:0: [sda] Write Protect is off
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:02:00.0 eth1: registered PHC clock
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:02:00.0 eth1: (PCI Express:2.5GT/s:Width x1) 00:25:90:71:75:03
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:02:00.0 eth1: Intel(R) PRO/1000 Network Connection
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:02:00.0 eth1: MAC: 3, PHY: 8, PBA No: 0101FF-0FF
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:  sda: sda1 sda2 sda3 sda4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata2: SATA link down (SStatus 0 SControl 300)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata3: SATA link down (SStatus 0 SControl 300)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata4: SATA link down (SStatus 0 SControl 300)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: floppy0: no floppy controllers found
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata5: SATA link down (SStatus 0 SControl 300)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: ata6: SATA link down (SStatus 0 SControl 300)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: md: linear personality registered for level -1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: md: multipath personality registered for level -4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: md: raid0 personality registered for level 0
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: md: raid1 personality registered for level 1
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: sse2x1   gen()  8164 MB/s
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: sse2x1   xor()  6392 MB/s
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: sse2x2   gen()  9671 MB/s
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: sse2x2   xor()  7529 MB/s
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: sse2x4   gen() 11052 MB/s
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: sse2x4   xor()  8151 MB/s
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: using algorithm sse2x4 gen() 11052 MB/s
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: .... xor() 8151 MB/s, rmw enabled
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: raid6: using ssse3x2 recovery algorithm
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: xor: measuring software checksum speed
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:    prefetch64-sse: 13882.000 MB/sec
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel:    generic_sse: 11955.000 MB/sec
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: xor: using function: prefetch64-sse (13882.000 MB/sec)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: async_tx: api initialized (async)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: md: raid6 personality registered for level 6
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: md: raid5 personality registered for level 5
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: md: raid4 personality registered for level 4
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: md: raid10 personality registered for level 10
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: Btrfs loaded
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu kernel: random: nonblocking pool is initialized
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Detected architecture x86-64.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Set hostname to <ns3023938.ip-91-121-64.eu>.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: [/etc/systemd/system/plexmediaserver.service:11] Invalid escape sequences in line, correcting: "/bin/sh -c 'LD_LIBRARY_PATH=/usr/lib/plexmediaserver /usr/lib/plexmediaserver/Plex\ Media\ Server'"
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Reached target User and Group Name Lookups.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Created slice User and Session Slice.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on Journal Socket (/dev/log).
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on udev Control Socket.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Encrypted Volumes.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on Device-mapper event daemon FIFOs.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on Syslog Socket.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on Journal Socket.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Created slice System Slice.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Created slice system-systemd\x2dfsck.slice.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Starting Set console keymap...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Mounting Debug File System...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Started Read required files in advance.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Starting Load Kernel Modules...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Starting Create list of required static device nodes for the current kernel...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on fsck to fsckd communication Socket.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Slices.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on udev Kernel Socket.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Mounting Huge Pages File System...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Mounting POSIX Message Queue File System...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on Journal Audit Socket.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Starting Journal Service...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd-journald[335]: Journal started
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu loadkeys[312]: Loading /etc/console-setup/cached.kmap.gz
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Starting Uncomplicated firewall...
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Listening on LVM2 poll daemon socket.
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Remote File Systems (Pre).
+sept. 29 15:45:07 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Remote File Systems.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Listening on LVM2 metadata daemon socket.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Mounted Huge Pages File System.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Mounted POSIX Message Queue File System.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Mounted Debug File System.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Started Journal Service.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Started Set console keymap.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Started Load Kernel Modules.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Started Create list of required static device nodes for the current kernel.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Started Uncomplicated firewall.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Started LVM2 metadata daemon.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Starting Create Static Device Nodes in /dev...
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Mounting FUSE Control File System...
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Starting Apply Kernel Variables...
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Mounted FUSE Control File System.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Started Apply Kernel Variables.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Started Create Static Device Nodes in /dev.
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd[1]: Starting udev Kernel Device Manager...
+sept. 29 15:45:08 ns3023938.ip-91-121-64.eu systemd-udevd[358]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Started udev Kernel Device Manager.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Starting Remount Root and Kernel File Systems...
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Started Remount Root and Kernel File Systems.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: EXT4-fs (sda2): re-mounted. Opts: errors=remount-ro
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Starting udev Coldplug all Devices...
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Starting Flush Journal to Persistent Storage...
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Starting Load/Save Random Seed...
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Started Load/Save Random Seed.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Started udev Coldplug all Devices.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Started Flush Journal to Persistent Storage.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: dca service started, version 1.12.1
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Local File Systems (Pre).
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: EDAC MC: Ver: 3.0.0
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: ioatdma: Intel(R) QuickData Technology Driver 4.00
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: ACPI Warning: SystemIO range 0x0000000000000828-0x000000000000082F conflicts with OpRegion 0x0000000000000800-0x000000000000084F (\PMRG) (20150930/utaddress-254)
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: lpc_ich: Resource conflict(s) found affecting gpio_ich
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: ppdev: user-space parallel port driver
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: EDAC MC0: Giving out device to module i7core_edac.c controller i7 core #0: DEV 0000:ff:03.0 (POLLED)
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: EDAC PCI0: Giving out device to module i7core_edac controller EDAC PCI controller: DEV 0000:ff:03.0 (POLLED)
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: EDAC i7core: Driver loaded, 1 memory controller(s) found.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: gpio_ich: GPIO from 451 to 511 on gpio_ich
+sept. 29 15:45:09 ns3023938.ip-91-121-64.eu kernel: kvm: VM_EXIT_LOAD_IA32_PERF_GLOBAL_CTRL does not work properly. Using workaround
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Found device 82574L Gigabit Network Connection.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: dev-disk-by\x2dpartlabel-primary.device: Dev dev-disk-by\x2dpartlabel-primary.device appeared twice with different sysfs paths /sys/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda2 and /sys/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda3
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Found device HGST_HUS724020ALA640 /home.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: dev-disk-by\x2dpartlabel-primary.device: Dev dev-disk-by\x2dpartlabel-primary.device appeared twice with different sysfs paths /sys/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda2 and /sys/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda4
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Found device HGST_HUS724020ALA640 swap-sda4.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Activating swap /dev/sda4...
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Starting File System Check on /dev/sda3...
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu kernel: Adding 523260k swap on /dev/sda4.  Priority:-1 extents:1 across:523260k FS
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Activated swap /dev/sda4.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Started File System Check Daemon to report status.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Swap.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd-fsck[540]: /home : propre, 227367/120782848 fichiers, 310650786/483126528 blocs
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Started File System Check on /dev/sda3.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: dev-disk-by\x2dpartlabel-primary.device: Dev dev-disk-by\x2dpartlabel-primary.device appeared twice with different sysfs paths /sys/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda2 and /sys/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda3
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Mounting /home...
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Mounted /home.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu kernel: EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Local File Systems.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: AppArmor initialization...
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Starting Set console font and keymap...
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Starting Create Volatile Files and Directories...
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd-tmpfiles[563]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+sept. 29 15:45:10 ns3023938.ip-91-121-64.eu apparmor[554]:  * Starting AppArmor profiles
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started Create Volatile Files and Directories.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started Set console font and keymap.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Created slice system-getty.slice.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu apparmor[554]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting Network Time Synchronization...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started Update UTMP about System Boot/Shutdown.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu audit[669]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=669 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started Network Time Synchronization.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: audit: type=1400 audit(1475156711.227:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=669 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu audit[672]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/named" pid=672 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu audit[674]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=674 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: audit: type=1400 audit(1475156711.255:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/named" pid=672 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: audit: type=1400 audit(1475156711.259:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=674 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Reached target System Time Synchronized.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu audit[670]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=670 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu audit[670]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=670 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu audit[670]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=670 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu audit[670]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=670 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu audit[671]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=671 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu apparmor[554]:    ...done.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: AppArmor initialization.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: audit: type=1400 audit(1475156711.267:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=670 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: audit: type=1400 audit(1475156711.267:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=670 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: audit: type=1400 audit(1475156711.267:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=670 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: audit: type=1400 audit(1475156711.267:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=670 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: audit: type=1400 audit(1475156711.271:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=671 comm="apparmor_parser"
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting Raise network interfaces...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Reached target System Initialization.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Listening on UUID daemon activation socket.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Listening on D-Bus System Message Bus Socket.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started ACPI Events Check.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Paths.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: apt-daily.timer: Adding 5h 55min 4.212142s random time.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started Daily apt activities.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started Daily Cleanup of Temporary Directories.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Timers.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Listening on ACPID Listen Socket.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting Docker Socket for the API.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Started ifup for eth0.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Listening on Docker Socket for the API.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Sockets.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Basic System.
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu kernel: IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: Record successful boot for GRUB...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting rtorrent (in tmux)...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: Start the GNUstep distributed object mapper...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: MD monitoring daemon...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting Login Service...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting System Logging Service...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: Set up cgroupfs mounts....
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: Start daemon at boot time...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: automatic crash report generation...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: daemon to balance interrupts for SMP systems...
+sept. 29 15:45:11 ns3023938.ip-91-121-64.eu systemd[1]: Starting Daily apt activities...
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Started Deferred execution scheduler.
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Started ACPI event daemon.
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Started D-Bus System Message Bus.
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu acpid[794]: starting up with netlink and the input layer
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu acpid[794]: 1 rule loaded
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu acpid[794]: waiting for events: event logging is off
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu su[766]: Successful su for greg by root
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu su[766]: + ??? root:greg
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu su[766]: pam_unix(su:session): session opened for user greg by (uid=0)
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu kernel: floppy0: no floppy controllers found
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu kernel: work still pending
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu dbus[798]: [system] AppArmor D-Bus mediation is enabled
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu dbus[798]: [system] Activating systemd to hand-off: service name='org.freedesktop.login1' unit='dbus-org.freedesktop.login1.service'
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu dbus[798]: [system] Successfully activated service 'org.freedesktop.systemd1'
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Starting Accounts Service...
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Started Regular background program processing daemon.
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Started Self Monitoring and Reporting Technology (SMART) Daemon.
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu cron[812]: (CRON) INFO (pidfile fd = 3)
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Starting Permit User Sessions...
+sept. 29 15:45:12 ns3023938.ip-91-121-64.eu systemd[1]: Started System Logging Service.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started rtorrent (in tmux).
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: Set up cgroupfs mounts..
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu gdomap[727]:  * GNUstep distributed object mapper disabled, see /etc/default/gdomap
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: Start the GNUstep distributed object mapper.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu mdadm[732]:  * Starting MD monitoring service mdadm --monitor
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started Permit User Sessions.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu apport[767]:  * Starting automatic crash report generation: apport
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu apport[767]:    ...done.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: automatic crash report generation.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: smartd 6.5 2016-01-24 r4214 [x86_64-linux-4.4.0-22-generic] (local build)
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: Opened configuration file /etc/smartd.conf
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu dbus[798]: [system] Successfully activated service 'org.freedesktop.login1'
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd-logind[748]: New seat seat0.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started Login Service.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu ifup[821]: /sbin/ifup: waiting for lock on /run/network/ifstate.eth0
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd-logind[748]: Watching system buttons on /dev/input/event1 (Power Button)
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd-logind[748]: Watching system buttons on /dev/input/event0 (Power Button)
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu cron[812]: (CRON) INFO (Running @reboot jobs)
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu irqbalance[769]:  * Starting SMP IRQ Balancer: irqbalance
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: Drive: DEVICESCAN, implied '-a' Directive on line 21 of file /etc/smartd.conf
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: Configuration file /etc/smartd.conf was parsed, found DEVICESCAN, scanning devices
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: Device: /dev/sda, type changed from 'scsi' to 'sat'
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: Device: /dev/sda [SAT], opened
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Created slice User Slice of greg.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: Device: /dev/sda [SAT], HGST HUS724020ALA640, S/N:PN2134P6HMWTUP, WWN:5-000cca-22dd722ea, FW:MF6OABY0, 2.00 TB
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu smartd[815]: Device: /dev/sda [SAT], found in smartd database: Hitachi/HGST Ultrastar 7K4000
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Starting User Manager for UID 1000...
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd-logind[748]: New session c1 of user greg.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started Session c1 of user greg.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu kernel: e1000e: eth0 NIC Link is Up 100 Mbps Full Duplex, Flow Control: None
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu kernel: e1000e 0000:01:00.0 eth0: 10/100 speed: disabling TSO
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu mdadm[732]:    ...done.
+sept. 29 15:45:13 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: MD monitoring daemon.
+sept. 29 15:45:14 ns3023938.ip-91-121-64.eu systemd[937]: pam_unix(systemd-user:session): session opened for user greg by (uid=0)
+sept. 29 15:45:14 ns3023938.ip-91-121-64.eu irqbalance[769]:    ...done.
+sept. 29 15:45:14 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: daemon to balance interrupts for SMP systems.
+sept. 29 15:45:14 ns3023938.ip-91-121-64.eu sh[689]: Waiting for DAD... Done
+sept. 29 15:45:15 ns3023938.ip-91-121-64.eu smartd[815]: Device: /dev/sda [SAT], is SMART capable. Adding to "monitor" list.
+sept. 29 15:45:15 ns3023938.ip-91-121-64.eu smartd[815]: Device: /dev/sda [SAT], state read from /var/lib/smartmontools/smartd.HGST_HUS724020ALA640-PN2134P6HMWTUP.ata.state
+sept. 29 15:45:15 ns3023938.ip-91-121-64.eu smartd[815]: Monitoring 1 ATA and 0 SCSI devices
+sept. 29 15:45:15 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: Record successful boot for GRUB.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu smartd[815]: Device: /dev/sda [SAT], state written to /var/lib/smartmontools/smartd.HGST_HUS724020ALA640-PN2134P6HMWTUP.ata.state
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Reached target Sockets.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Reached target Paths.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Reached target Timers.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Reached target Basic System.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Reached target Default.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Startup finished in 2.242s.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[1]: Started User Manager for UID 1000.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu dbus[798]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu su[766]: pam_unix(su:session): session closed for user greg
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu su[1026]: Successful su for greg by root
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu su[1026]: + ??? root:greg
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu su[1026]: pam_unix(su:session): session opened for user greg by (uid=0)
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[1]: Starting Authenticate and Authorize Users to Run Privileged Tasks...
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd-logind[748]: New session c2 of user greg.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[1]: Started Session c2 of user greg.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd-logind[748]: Removed session c1.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu su[1026]: pam_unix(su:session): session closed for user greg
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd-logind[748]: Removed session c2.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[1]: Stopping User Manager for UID 1000...
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Stopped target Default.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Stopped target Basic System.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Stopped target Sockets.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Stopped target Paths.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Stopped target Timers.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Reached target Shutdown.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Starting Exit the Session...
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[937]: Received SIGRTMIN+24 from PID 1044 (kill).
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[982]: pam_unix(systemd-user:session): session closed for user greg
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[1]: Stopped User Manager for UID 1000.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu polkitd[1027]: started daemon version 0.105 using authority implementation `local' version `0.105'
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu dbus[798]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu accounts-daemon[808]: started daemon version 0.6.40
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[1]: Started Authenticate and Authorize Users to Run Privileged Tasks.
+sept. 29 15:45:16 ns3023938.ip-91-121-64.eu systemd[1]: Started Accounts Service.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Removed slice User Slice of greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu rtorrent-init[764]: Starting rtorrent: rtorrentstty: 'standard input': Inappropriate ioctl for device
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1051]: Successful su for greg by root
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1051]: + ??? root:greg
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1051]: pam_unix(su:session): session opened for user greg by (uid=0)
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Created slice User Slice of greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Starting User Manager for UID 1000...
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: pam_unix(systemd-user:session): session opened for user greg by (uid=0)
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Reached target Sockets.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Reached target Timers.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Reached target Paths.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Reached target Basic System.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Reached target Default.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Startup finished in 12ms.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Started User Manager for UID 1000.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd-logind[748]: New session c3 of user greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Started Session c3 of user greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1051]: pam_unix(su:session): session closed for user greg
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1064]: Successful su for greg by root
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd-logind[748]: Removed session c3.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1064]: + ??? root:greg
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1064]: pam_unix(su:session): session opened for user greg by (uid=0)
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Stopping User Manager for UID 1000...
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Reached target Shutdown.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Starting Exit the Session...
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Stopped target Default.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Stopped target Basic System.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Stopped target Paths.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Stopped target Timers.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Stopped target Sockets.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Created slice User Slice of greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1052]: Received SIGRTMIN+24 from PID 1066 (kill).
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1054]: pam_unix(systemd-user:session): session closed for user greg
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd-logind[748]: New session c4 of user greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Started Session c4 of user greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Starting User Manager for UID 1000...
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1074]: pam_unix(systemd-user:session): session opened for user greg by (uid=0)
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1074]: Reached target Paths.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1074]: Reached target Timers.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1074]: Reached target Sockets.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1074]: Reached target Basic System.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1074]: Reached target Default.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1074]: Startup finished in 12ms.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Started User Manager for UID 1000.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1064]: pam_unix(su:session): session closed for user greg
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1082]: Successful su for greg by root
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1082]: + ??? root:greg
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1082]: pam_unix(su:session): session opened for user greg by (uid=0)
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd-logind[748]: New session c5 of user greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Started Session c5 of user greg.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu su[1082]: pam_unix(su:session): session closed for user greg
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu rtorrent-init[764]: .
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: Start daemon at boot time.
+sept. 29 15:45:17 ns3023938.ip-91-121-64.eu systemd-logind[748]: Removed session c5.
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu sh[689]: RTNETLINK answers: File exists
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu sh[689]: RTNETLINK answers: File exists
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu systemd[1]: Started Raise network interfaces.
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Network.
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu systemd[1]: Starting A high performance web server and a reverse proxy server...
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu systemd[1]: Starting Docker Application Container Engine...
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu systemd[1]: Starting MySQL Community Server...
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu systemd[1]: Started BIND Domain Name Server.
+sept. 29 15:45:19 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Host and Network Name Lookups.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Starting OpenBSD Secure Shell server...
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Reached target Network is Online.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: disk temperature monitoring daemon...
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Starting LSB: Start Jenkins at boot time...
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu jenkins[1546]: daemon package not installed
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Starting Plex Media Server for Linux...
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Starting /etc/rc.local Compatibility...
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: jenkins.service: Control process exited, code=exited status=1
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Failed to start LSB: Start Jenkins at boot time.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: jenkins.service: Unit entered failed state.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: jenkins.service: Failed with result 'exit-code'.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Started Plex Media Server for Linux.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: starting BIND 9.10.3-P4-Ubuntu <id:ebd72b3> -f -u bind
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: built with '--prefix=/usr' '--mandir=/usr/share/man' '--libdir=/usr/lib/x86_64-linux-gnu' '--infodir=/usr/share/info' '--sysconfdir=/etc/bind' '--localstatedir=/' '--enable-threads' '--enable-largefile' '--with-libtool' '--enable-shared' '--enable-static' '--with-openssl=/usr' '--with-gssapi=/usr' '--with-gnu-ld' '--with-geoip=/usr' '--with-atf=no' '--enable-ipv6' '--enable-rrl' '--enable-filter-aaaa' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib/x86_64-linux-gnu/softhsm/libsofthsm2.so' 'CFLAGS=-g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -fno-strict-aliasing -fno-delete-null-pointer-checks -DNO_VERSION_DATE' 'LDFLAGS=-Wl,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2 -DDIG_SIGCHASE'
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: ----------------------------------------------------
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: BIND 9 is maintained by Internet Systems Consortium,
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: corporation.  Support and training for BIND 9 are
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: available at https://www.isc.org/support
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: ----------------------------------------------------
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: adjusted limit on open files from 4096 to 1048576
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: found 8 CPUs, using 8 worker threads
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: using 4 UDP listeners per interface
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu named[1532]: using up to 4096 sockets
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Started /etc/rc.local Compatibility.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Started LSB: disk temperature monitoring daemon.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Starting Terminate Plymouth Boot Screen...
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Starting Hold until boot process finishes up...
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Started Terminate Plymouth Boot Screen.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu systemd[1]: Started Hold until boot process finishes up.
+sept. 29 15:45:20 ns3023938.ip-91-121-64.eu sshd[1534]: Server listening on 0.0.0.0 port 22.
