@@ -5,16 +5,25 @@
 var binairies = {
 
     ls: function (ac, av) {
-        console.log("ls");
+
     },
 
     cd: function (ac, av) {
-        write("You can't change directory :'), please contact me")
+        writeNl("You can't change directory :'), please contact me")
+    },
+
+    author: function (ac, av) {
+
+    },
+
+    sendmail: function (ac, av) {
+        open("mailto:" + subsytem.env.get("MAIL"));
+        writeNl("sendmail: if nothing happen, you can also contact me at " + subsytem.env.get("MAIL"))
     },
 
     help: function (ac, av) {
         console.log("help", write);
-        writeNl("Welcome on my cv, this is a list of avalaible commands: ");
+        writeNl("Welcome on my resume, this is a list of avalaible commands: ");
         var binairieIn = subsytem.getBinairieIn("/bin");
         for (var i = 0; i < binairieIn.length ; ++i) {
             writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);

@@ -133,13 +133,17 @@ $(document).keydown(function (e) {
             e.which = -1;
         switch (e.which) {
             case -1:
-                clearWin()
+                clearWin();
                 break;
             case 13:
                 execute(String.fromCharCode(e.which));
                 break;
             case 8:
-                backspace()
+                backspace();
+                break;
+            case 17:
+                break;
+            case 91:
                 break;
             default:
                 write(String.fromCharCode(e.which).toLowerCase());

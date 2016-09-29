@@ -7,6 +7,29 @@ var subsytem = {
     system: [],
     env: [],
 
+    explore: function (path) {
+        var res = [];
+        var pwd = this.system;
+
+        var split = path.split("/");
+        try {
+            split.forEach(function (folder) {
+                if (folder == "")
+                    return;
+                pwd = pwd.get(folder);
+                if (folder.permission == 0) {
+                    throw "no permission for this folder (";
+                }
+            });
+        } catch (e) {
+            return [];
+        }
+        pwd.content.forEach(function (element) {
+            res.push(element);
+        });
+        return res;
+    },
+
     getBinairieIn: function (path) {
         var res = [];
         var pwd = this.system;
@@ -78,6 +101,7 @@ var subsytem = {
         this.env.push({name: "PWD", value: "/home/user"});
         this.env.push({name: "OLDPWD", value: "/home/user"});
         this.env.push({name: "PATH", value: "/bin"});
+        this.env.push({name: "MAIL", value: "gregoire.guemas@epitech.eu"}); //TODO add dynamic value
         this.env.get = function (name) {
             for (var i = 0; i < this.length; ++i) {
                 if (this[i].name == name) {
