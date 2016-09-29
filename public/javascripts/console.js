@@ -45,18 +45,18 @@ function backspace() {
 
 
 function makeIntro() {
-    document.getElementById("line0").style.visibility = "visible"
+    document.getElementById("line0").style.visibility = "visible";
+    $("#line0").hide();
     var LineIntro= $("#line0");
     var textIntro= $("#line0").text().split("\n");
     LineIntro.text("");
     var buff;
-    for(var i = 0; textIntro.length != i ; i++)
-    {
+    for(var i = 0; textIntro.length != i ; i++) {
         buff = textIntro[i].replace("OK", "<span class='g'>OK</span>");
         buff = buff.replace("done", "<span class='g'>done</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
-
     }
+    $("#line0").show(4000);
 }
 function findPos(obj) {
     var curtop = 0;
