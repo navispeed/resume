@@ -6,6 +6,7 @@ var subsytem = {
 
     system: [],
     env: [],
+    who: {},
 
     explore: function (path) {
         var res = [];

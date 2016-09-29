@@ -38,6 +38,11 @@
           "name": "github",
           "permission": 7,
           "desc": "Open a new window on author's github"
+        },
+        {
+          "name": "linkedin",
+          "permission": 7,
+          "desc": "Open a new window on author's linkedin"
         }
       ]
     },
