@@ -62,14 +62,19 @@ function makeIntro() {
     LineIntro.text("");
     var buff;
     var j = 0;
+
+    function writeBoot() {
+        LineIntro.html("<h3></h3>");
+    }
+
     function writeLine() {
         buff = textIntro[j].replace("OK", "<span class='g' style='color: green'>OK</span>");
         buff = buff.replace("done", "<span class='g'>done</span>");
         LineIntro.html(LineIntro.html() + buff + "<br>");
-        window.scrollTo(0, 4000000);
         ++j;
         if (j < textIntro.length) {
-            setTimeout(writeLine, Math.random() * 100 % 10 + 1);
+            window.scrollTo(0, 4000000);
+            setTimeout(writeLine, 1);
         } else {
             $cursor.show();
             $line1.show();
