@@ -68,7 +68,7 @@ var subsytem = {
                 console.log("directory: ", directory);
                 for (var i = 0; i < directory.content.length; ++i) {
                     var child = directory.content[i];
-                    if (child.permission != undefined) {
+                    if (child.content == undefined) {
                         child.execute = binairies[child.name];
                         console.log("child: ", child);
                     } else {
