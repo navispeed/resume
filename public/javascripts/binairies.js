@@ -36,6 +36,10 @@ var binairies = {
         writeNl(s);
     },
 
+    clear: function (ac, av) {
+    clearWin(1);
+    },
+
     cd: function (ac, av) {
         av[1] = av[1] == undefined ? "/home/user" : av[1];
         var file = subsytem.getFile(av[1]);
@@ -56,7 +60,6 @@ var binairies = {
             writeNl("Cannot access " + av[1] + " : not a directory");
         }
     },
-
     author: function (ac, av) {
 
     },

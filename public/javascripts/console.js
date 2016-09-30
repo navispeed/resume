@@ -118,9 +118,10 @@ function makeIntro() {
     setTimeout(writeLine, 3000);
 }
 
-function clearWin() {
+function clearWin(addNewLine) {
     var console = $("#console");
     console.html("");
+    if (addNewLine == 0)
     execute("");
     cl = [0, 0];
 }
@@ -134,7 +135,7 @@ $(document).keydown(function (e) {
             e.which = -1;
         switch (e.which) { //TODO faire marcher ca avec autre chose que de l'azerty
             case -1:
-                clearWin();
+                clearWin(0);
                 break;
             case 13:
                 execute(String.fromCharCode(e.which));
