@@ -37,11 +37,12 @@ function write(str, color) {
 }
 
 function writeNl(str, color) {
-    write(str);
-    var $actualLine = $("#line" + lineNumber);
     extracted();
-    $actualLine.html($actualLine.html() + "<br>");
-    $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
+    var $actualLine = $("#line" + lineNumber);
+    $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
+    $actualLine = $("#line" + (lineNumber));
+    $actualLine.text(($actualLine.text() + str));
+    lineNumber++;
     window.scrollTo(0, 4000000);
 }
 
