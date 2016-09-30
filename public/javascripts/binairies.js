@@ -48,6 +48,13 @@ var binairies = {
                 writeHTML("<span class='dontDoIt'>" + split[i++]+ "</span>");
                 if (i < split.length)
                     setTimeout(writeSlow, 800);
+                else
+                {
+                    setTimeout(function () {
+                        clearWin();
+                        execute("");
+                    }, 800);
+                }
             }, 800);
         }
         writeSlow();
