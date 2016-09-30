@@ -10,11 +10,6 @@
           "desc": "Change directory"
         },
         {
-          "name": "cat",
-          "permission": 7,
-          "desc": "Change directory"
-        },
-        {
           "name": "ls",
           "permission": 7,
           "desc": "List directory contents"
@@ -69,6 +64,7 @@
           "permission": 7,
           "desc": "Just a basic pwd"
         }
+
       ]
     },
     {
@@ -79,8 +75,7 @@
           "content": [
             {
               "name": "me.ascii",
-              "permission:": 1,
-              "url": "/who/picture"
+              "permission:": 1
             }
           ]
         }
