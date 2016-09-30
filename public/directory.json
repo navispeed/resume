@@ -15,11 +15,6 @@
           "desc": "List directory contents"
         },
         {
-          "name": "ctrl-l",
-          "permission": 7,
-          "desc": "Clear window"
-        },
-        {
           "name": "help",
           "permission": 7,
           "desc": "Show this message"

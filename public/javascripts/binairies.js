@@ -106,7 +106,8 @@ var binairies = {
         for (var i = 0; i < binairieIn.length; ++i) {
             writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);
         }
-        write("Enjoy :)")
+        write("Don't forget you can clear the windows with Ctrl + L");
+        write("Enjoy :)");
     },
 
     env: function (ac, av) {

@@ -44,6 +44,20 @@ function writeNl(str, color) {
     $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
 }
 
+function writeHTML(str, color) {
+    var $actualLine = $("#line" + lineNumber);
+    extracted();
+    if ($actualLine[0] == undefined) {
+        $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
+        $actualLine = $("#line" + (lineNumber));
+        $actualLine.text(($actualLine.text() + str));
+        lineNumber++;
+        return
+    }
+    $actualLine.html(($actualLine.html() + str));
+    $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
+}
+
 
 
 function execute(str) {
@@ -63,7 +77,7 @@ function execute(str) {
     window.scrollTo(0, 4000000);
 }
 
-function backspace() {
+function backspace() { //TODO la faire marcher
     var actualLine = $("#line" + lineNumber);
     actualLine.text(actualLine.text().substring(0, actualLine.text().length - 1)); // remove it
     actualLine.html(actualLine.html() + "<span id='cursor'>|</span>");
@@ -134,6 +148,7 @@ $(document).keydown(function (e) {
             e.which = -1;
         switch (e.which) { //TODO faire marcher ca avec autre chose que de l'azerty
             case -1:
+                e.preventDefault();
                 clearWin(0);
                 break;
             case 13:
@@ -151,6 +166,8 @@ $(document).keydown(function (e) {
                 break;
             case 191:
                 write("/");
+                break;
+            case 16:
                 break;
             default:
                 write(String.fromCharCode(e.which).toLowerCase());
