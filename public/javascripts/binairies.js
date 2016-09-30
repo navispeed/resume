@@ -38,11 +38,25 @@ var binairies = {
         writeNl(s);
     },
 
+    rm: function (ac, av) {
+        console.log(subsytem.who.rmmsg);
+        var i = 0;
+        clearWin();
+        var split = subsytem.who.rmmsg.split("\n");
+        function writeSlow() {
+            setTimeout(function () {
+                writeHTML("<span class='dontDoIt'>" + split[i++]+ "</span>");
+                if (i < split.length)
+                    setTimeout(writeSlow, 800);
+            }, 800);
+        }
+        writeSlow();
+    },
     clear: function (ac, av) {
         clearWin(1);
     },
 
-    cat: function(ac, av) {
+    cat: function (ac, av) {
         if (ac == 1) {
             writeNl("Can't open stdin, maybe you should try with a file");
             writeNl("usage : cat [file 1] [file 2] ... [fileN]");
@@ -58,7 +72,7 @@ var binairies = {
             url: file.url,
         }).done(function (msg) {
             var split = msg.split("\n");
-            for (var i = 0; i < split.length ; ++i) {
+            for (var i = 0; i < split.length; ++i) {
                 writeNl(split[i]);
             }
         });
@@ -98,6 +112,7 @@ var binairies = {
                 ++i;
                 setTimeout(showLine, 10);
             }
+
             setTimeout(showLine, 0);
         }
     }, author: function (ac, av) {
@@ -111,7 +126,8 @@ var binairies = {
             case "resume":
                 writeNl("");
                 break;
-            case "picture": binairies.picture();
+            case "picture":
+                binairies.picture();
         }
     },
 
@@ -145,7 +161,6 @@ var binairies = {
             writeNl(subsytem.env[i].name + "=" + subsytem.env[i].value);
         }
     },
-
     pwd: function (ac, av) {
         var s = binairies.getPwd();
         writeNl(s);

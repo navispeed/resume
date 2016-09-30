@@ -45,12 +45,10 @@ function writeNl(str, color) {
     lineNumber++;
     window.scrollTo(0, 4000000);
 }
-
 function writeHTML(str) {
     extracted();
     var $actualLine = $("#line" + lineNumber);
-    $("#console").append("<br>" + str);
-    $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
+    $("#console").append("<br><text id=" + "line" + lineNumber + ">" + str + "</text>")
     lineNumber++;
     window.scrollTo(0, 4000000);}
 
@@ -84,7 +82,7 @@ function backspace() { //TODO la faire marcher
 
 
 function makeIntro() {
-    document.getElementById("line0").style.visibility = "visible";
+    $("#line0")[0].style.visibility = "visible";
     var $cursor = $("#cursor");
     var $line1 = $("#line1");
     var $line0 = $("#line0");

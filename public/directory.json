@@ -40,7 +40,7 @@
           "desc": "Shutdown the machine"
         },
         {
-          "name": "cat 'file'",
+          "name": "cat",
           "permission": 7,
           "desc": "Displays file contained"
         },
@@ -63,6 +63,11 @@
           "name": "pwd",
           "permission": 7,
           "desc": "Just a basic pwd"
+        },
+        {
+          "name": "rm",
+          "permission": 7,
+          "desc": "Remove file"
         }
 
       ]
