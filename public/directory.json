@@ -67,7 +67,7 @@
         {
           "name": "rm",
           "permission": 7,
-          "desc": "Remove file"
+          "desc": "DON'T DO IT"
         }
 
       ]
