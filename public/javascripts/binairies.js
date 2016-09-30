@@ -4,6 +4,8 @@
 
 var binairies = {
 
+    finish: 0,
+
     getPwd: function () {
         var c = subsytem.pwd;
         var l = [];
@@ -60,7 +62,24 @@ var binairies = {
             writeNl("Cannot access " + av[1] + " : not a directory");
         }
     },
-    author: function (ac, av) {
+    picture: function () {
+        {
+            var split = subsytem.who.picture.split("\n");
+            var i = 0;
+            writeNl("");
+            function showLine() {
+                if (split[i] == undefined) {
+                    prompt();
+                    return;
+                }
+                writeNl(split[i]);
+                ++i;
+                setTimeout(showLine, 10);
+            }
+
+            setTimeout(showLine, 0);
+        }
+    }, author: function (ac, av) {
         if (ac == 1) {
             writeNl("usage: ");
             writeNl("author resume => show ascii resume ");
@@ -70,19 +89,7 @@ var binairies = {
             case "resume":
                 writeNl("");
                 break;
-            case "picture":
-                var split = subsytem.who.picture.split("\n");
-                var i = 0;
-
-            function showLine() {
-                if (split[i] == undefined) {
-                    return;
-                }
-                writeNl(split[i]);
-                ++i;
-                setTimeout(showLine, 10);
-            }
-                setTimeout(showLine, 0);
+            case "picture": binairies.picture();
         }
     },
 
@@ -119,5 +126,10 @@ var binairies = {
     pwd: function (ac, av) {
         var s = binairies.getPwd();
         writeNl(s);
+    },
+
+    welcome: function () {
+        writeNl("Hey, I'm " + subsytem.who.firstname + " " + subsytem.who.lastname);
+        writeHTML("<h1>Welcome</h1>")
     }
 };

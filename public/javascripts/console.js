@@ -42,24 +42,24 @@ function writeNl(str, color) {
     extracted();
     $actualLine.html($actualLine.html() + "<br>");
     $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
+    window.scrollTo(0, 4000000);
 }
 
-function writeHTML(str, color) {
+function writeHTML(str) {
     var $actualLine = $("#line" + lineNumber);
     extracted();
-    if ($actualLine[0] == undefined) {
-        $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
-        $actualLine = $("#line" + (lineNumber));
-        $actualLine.text(($actualLine.text() + str));
-        lineNumber++;
-        return
-    }
-    $actualLine.html(($actualLine.html() + str));
-    $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
+    $actualLine.append($actualLine.html());
+    $actualLine.append(str);
+    $actualLine.append("<span id='cursor'>|</span>");
+    // $actualLine.html(($actualLine.html() + str + + "<span id='cursor'>|</span>"));
 }
 
 
-
+function prompt() {
+    $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
+    write("");
+    window.scrollTo(0, 4000000);
+}
 function execute(str) {
     var $actualLine = $("#line" + lineNumber);
     lineNumber++;
@@ -68,13 +68,12 @@ function execute(str) {
         name = $actualLine.text().split(":")[1];
         if (name == "")
             name = "Petit Lapinou";
+        binairies.welcome();
         subsytem.execute("help");
     }
     $actualLine.text(($actualLine.text() + str));
     subsytem.execute($actualLine.text().replace("\r", ""));
-    $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
-    write("");
-    window.scrollTo(0, 4000000);
+    prompt();
 }
 
 function backspace() { //TODO la faire marcher
@@ -136,7 +135,7 @@ function clearWin(addNewLine) {
     var console = $("#console");
     console.html("");
     if (addNewLine == 0)
-    execute("");
+        execute("");
     cl = [0, 0];
 }
 
@@ -172,7 +171,7 @@ $(document).keydown(function (e) {
             default:
                 write(String.fromCharCode(e.which).toLowerCase());
         }
-}
+    }
 });
 setInterval(blinkingCursor, 1000);
 window.onload = makeIntro;
