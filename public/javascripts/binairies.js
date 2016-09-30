@@ -76,7 +76,6 @@ var binairies = {
                 ++i;
                 setTimeout(showLine, 10);
             }
-
             setTimeout(showLine, 0);
         }
     }, author: function (ac, av) {
