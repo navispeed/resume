@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/who', function(req, res, next) {
   var content;
+  console.log("h:", req.headers.host);
   res.setHeader('Content-Type', 'application/json');
 
   switch (req.headers.host) {
