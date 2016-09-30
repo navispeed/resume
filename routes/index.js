@@ -32,5 +32,27 @@ router.get('/who', function(req, res, next) {
   res.send(content);
 });
 
+router.get('/who/picture', function(req, res, next) {
+  var content;
+  console.log("h:", req.headers.host);
+  res.setHeader('Content-Type', 'application/json');
+
+  switch (req.headers.host) {
+    case "127.0.0.1:3000":
+      content = fs.readFileSync("public/profils/greg.ascii", "UTF-8");
+      break;
+    case "resume.navispeed.eu":
+      content = fs.readFileSync("public/profils/greg.ascii", "UTF-8");
+      break;
+    case "yohanncelerien.com":
+      content = fs.readFileSync("public/profils/yohann.ascii", "UTF-8");
+      break;
+    default:
+      content = "{ \"status\": \"not found\", \"host\": " + req.headers.host + " }";
+  }
+
+  res.send(content);
+});
+
 //console.log(request.headers.host);
 module.exports = router;

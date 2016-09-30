@@ -42,6 +42,28 @@ var binairies = {
         clearWin(1);
     },
 
+    cat: function(ac, av) {
+        if (ac == 1) {
+            writeNl("Can't open stdin, maybe you should try with a file");
+            writeNl("usage : cat [file 1] [file 2] ... [fileN]");
+            return;
+        }
+        var file = subsytem.getFile(av[1]);
+        if (file == undefined || file.content != undefined) {
+            writeNl("Cannot access " + av[1]);
+            return;
+        }
+        $.ajax({
+            method: "GET",
+            url: file.url,
+        }).done(function (msg) {
+            var split = msg.split("\n");
+            for (var i = 0; i < split.length ; ++i) {
+                writeNl(split[i]);
+            }
+        });
+    },
+
     cd: function (ac, av) {
         av[1] = av[1] == undefined ? "/home/user" : av[1];
         var file = subsytem.getFile(av[1]);

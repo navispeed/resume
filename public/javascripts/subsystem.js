@@ -89,7 +89,6 @@ var subsytem = {
 
         for (var i = 0; i < binairieIn.length; ++i) {
             if (String(binairieIn[i].name) == String(args[0])) {
-                console.log("execute");
                 binairieIn[i].execute(args.length, args);
                 return;
             }
