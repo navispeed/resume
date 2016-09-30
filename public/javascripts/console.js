@@ -47,13 +47,12 @@ function writeNl(str, color) {
 }
 
 function writeHTML(str) {
-    var $actualLine = $("#line" + lineNumber);
     extracted();
-    $actualLine.append($actualLine.html());
-    $actualLine.append(str);
-    $actualLine.append("<span id='cursor'>|</span>");
-    // $actualLine.html(($actualLine.html() + str + + "<span id='cursor'>|</span>"));
-}
+    var $actualLine = $("#line" + lineNumber);
+    $("#console").append("<br>" + str);
+    $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
+    lineNumber++;
+    window.scrollTo(0, 4000000);}
 
 
 function prompt() {

@@ -82,6 +82,7 @@ var binairies = {
         if (ac == 1) {
             writeNl("usage: ");
             writeNl("author resume => show ascii resume ");
+            writeNl("author picture => show ascii picture ");
             return;
         }
         switch (av[1]) {
@@ -107,11 +108,12 @@ var binairies = {
 
     help: function (ac, av) {
         console.log("help", write);
-        writeNl("Welcome on my resume, this is a list of available commands: ");
+        writeNl("This is a list of available commands: ");
         var binairieIn = subsytem.getBinairieIn("/bin");
         for (var i = 0; i < binairieIn.length; ++i) {
             writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);
         }
+        write("");
         write("Don't forget you can clear the windows with Ctrl + L");
         write("Enjoy :)");
     },
@@ -129,6 +131,6 @@ var binairies = {
 
     welcome: function () {
         writeNl("Hey, I'm " + subsytem.who.firstname + " " + subsytem.who.lastname);
-        writeHTML("<h1>Welcome</h1>")
+        writeHTML("<h3>Welcome on my resume</h3>")
     }
 };
