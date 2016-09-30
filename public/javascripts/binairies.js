@@ -37,7 +37,7 @@ var binairies = {
     },
 
     clear: function (ac, av) {
-    clearWin(1);
+        clearWin(1);
     },
 
     cd: function (ac, av) {
@@ -61,15 +61,37 @@ var binairies = {
         }
     },
     author: function (ac, av) {
+        if (ac == 1) {
+            writeNl("usage: ");
+            writeNl("author resume => show ascii resume ");
+            return;
+        }
+        switch (av[1]) {
+            case "resume":
+                writeNl("");
+                break;
+            case "picture":
+                var split = subsytem.who.picture.split("\n");
+                var i = 0;
 
+            function showLine() {
+                if (split[i] == undefined) {
+                    return;
+                }
+                writeNl(split[i]);
+                ++i;
+                setTimeout(showLine, 10);
+            }
+                setTimeout(showLine, 0);
+        }
     },
 
     github: function (ac, av) {
-        window.open('https://github.com/grimaceplume');
+        window.open(subsytem.who.github);
     },
 
     linkedin: function (ac, av) {
-        window.open('https://www.linkedin.com/in/gr%C3%A9goire-gu%C3%A9mas-9865abaa?trk=nav_responsive_tab_profile_pic');
+        window.open(subsytem.who.linkedin);
     },
 
     sendmail: function (ac, av) {
@@ -79,7 +101,7 @@ var binairies = {
 
     help: function (ac, av) {
         console.log("help", write);
-        writeNl("Welcome on my resume, this is a list of avalaible commands: ");
+        writeNl("Welcome on my resume, this is a list of available commands: ");
         var binairieIn = subsytem.getBinairieIn("/bin");
         for (var i = 0; i < binairieIn.length; ++i) {
             writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);

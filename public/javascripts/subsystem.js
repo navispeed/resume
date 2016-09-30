@@ -96,6 +96,26 @@ var subsytem = {
         }
     },
 
+    downloadUser: function () {
+        function downloadPicture(name) {
+            $.ajax({
+                method: "GET",
+                url: "/profils/" + name,
+            }).done(function (msg) {
+                subsytem.who.picture = msg;
+            });
+        }
+        $.ajax({
+            method: "GET",
+            url: "/who",
+        }).done(function (msg) {
+            console.log(msg);
+            subsytem.who = msg;
+            subsytem.env.push({name: "MAIL", value: msg.email}); //TODO add dynamic value
+            downloadPicture(msg.ascii);
+        });
+    },
+
     downloadFileSystem: function () {
         $.ajax({
             method: "GET",
@@ -143,7 +163,6 @@ var subsytem = {
         this.env.push({name: "PWD", value: "/home/user"});
         this.env.push({name: "OLDPWD", value: "/home/user"});
         this.env.push({name: "PATH", value: "/bin"});
-        this.env.push({name: "MAIL", value: "gregoire.guemas@navispeed.eu"}); //TODO add dynamic value
         this.env.get = function (name) {
             for (var i = 0; i < this.length; ++i) {
                 if (this[i].name == name) {
@@ -156,6 +175,7 @@ var subsytem = {
 
     init: function () {
         this.downloadFileSystem();
+        this.downloadUser();
         this.initEnv();
     },
 };

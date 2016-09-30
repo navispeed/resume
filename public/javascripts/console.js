@@ -127,7 +127,6 @@ function clearWin(addNewLine) {
 }
 
 $(document).keydown(function (e) {
-    console.log(e.which);
     if (innib == 1) {
         clRow = (clRow == 0) ? 1 : 0;
         cl[clRow] = e.which;
