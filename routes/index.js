@@ -19,7 +19,7 @@ router.get('/who', function(req, res, next) {
     case "127.0.0.1:3000":
       content = fs.readFileSync("public/profils/greg.json", "UTF-8");
       break;
-    case "resume.navispeed.eu":
+    case "navispeed.eu":
       content = fs.readFileSync("public/profils/greg.json", "UTF-8");
       break;
     case "yohanncelerien.com":
@@ -41,7 +41,7 @@ router.get('/who/picture', function(req, res, next) {
     case "127.0.0.1:3000":
       content = fs.readFileSync("public/profils/greg.ascii", "UTF-8");
       break;
-    case "resume.navispeed.eu":
+    case "navispeed.eu":
       content = fs.readFileSync("public/profils/greg.ascii", "UTF-8");
       break;
     case "yohanncelerien.com":
