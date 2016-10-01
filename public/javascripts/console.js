@@ -8,30 +8,30 @@ var innib = 0;
 var cl = [0, 0];
 var clRow = 0;
 
+function Line() {
+    var content;
+    var number;
+}
 
-var myConsole =  {
-    canWrite : true,
-    userName : undefined,
-    terminal : undefined,
+var myConsole = {
+    canWrite: true,
+    userName: undefined,
+    terminal: undefined,
     numberLine: 0,
-    cursor : undefined,
-    lineList : [],
-    actualLine : undefined,
-    Line : {
-        content : undefined,
-        id : undefined
-    },
-    init : function () {
+    cursor: undefined,
+    lineList: [],
+    actualLine: undefined,
+    init: function () {
         this.terminal = $("#console");
         this.cursor = $("#cursor");
         this.actualLine = new Line;
-        this.actualLine.id = 0;
-        this.actualLine.content = $("#line0");
+        this.actualLine.id = 1;
+        this.actualLine.content = $("#line1");
     },
-    addTextToLine : function (str) {
+    addTextToLine: function (str) {
         actualine.text(actualine.text + str);
     },
-    addLine : function () {
+    addLine: function () {
         this.numberLine++;
         var linebuff;
         linebuff = new this.Line;
@@ -46,7 +46,7 @@ var myConsole =  {
         else
             this.cursor.text(this.cursor.text() + "|");
     },
-    scroll : function (time) {
+    scroll: function (time) {
         window.scrollTo(0, time);
     }
 
@@ -89,6 +89,7 @@ function writeNl(str, color) {
     lineNumber++;
     window.scrollTo(0, 4000000);
 }
+
 function writeHTML(str) {
     extracted();
     var $actualLine = $("#line" + lineNumber);
@@ -216,5 +217,6 @@ $(document).keydown(function (e) {
         }
     }
 });
+myConsole.init();
 setInterval(blinkingCursor, 1000);
-window.onload = makeIntro;
+//window.onload = makeIntro;
