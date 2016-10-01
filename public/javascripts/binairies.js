@@ -39,7 +39,6 @@ var binairies = {
     },
 
     rm: function (ac, av) {
-        console.log(subsytem.who.rmmsg);
         var i = 0;
         clearWin();
         var split = subsytem.who.rmmsg.split("\n");
@@ -74,10 +73,16 @@ var binairies = {
             writeNl("Cannot access " + av[1]);
             return;
         }
+        if (av[1] == "me.ascii") {
+            subsytem.execute("author picture");
+            return;
+        }
+        console.log("file:", file);
         $.ajax({
             method: "GET",
             url: file.url,
         }).done(function (msg) {
+            console.log("done");
             var split = msg.split("\n");
             for (var i = 0; i < split.length; ++i) {
                 writeNl(split[i]);
@@ -123,6 +128,7 @@ var binairies = {
             setTimeout(showLine, 0);
         }
     }, author: function (ac, av) {
+        console.log("author");
         if (ac == 1) {
             writeNl("usage: ");
             writeNl("author resume => show ascii resume ");

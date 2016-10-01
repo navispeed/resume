@@ -80,6 +80,7 @@
           "content": [
             {
               "name": "me.ascii",
+              "url": "/who/picture",
               "permission:": 1
             }
           ]
