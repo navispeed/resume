@@ -8,6 +8,50 @@ var innib = 0;
 var cl = [0, 0];
 var clRow = 0;
 
+
+var myConsole =  {
+    canWrite : true,
+    userName : undefined,
+    terminal : undefined,
+    numberLine: 0,
+    cursor : undefined,
+    lineList : [],
+    actualLine : undefined,
+    Line : {
+        content : undefined,
+        id : undefined
+    },
+    init : function () {
+        this.terminal = $("#console");
+        this.cursor = $("#cursor");
+        this.actualLine = new Line;
+        this.actualLine.id = 0;
+        this.actualLine.content = $("#line0");
+    },
+    addTextToLine : function (str) {
+        actualine.text(actualine.text + str);
+    },
+    addLine : function () {
+        this.numberLine++;
+        var linebuff;
+        linebuff = new this.Line;
+        linebuff.id = this.numberLine;
+        actualine.content.append("<br><span class='name'>" + this.userName + "@DESKTOP-5VL27MA: </span>" + "<text id=" + linebuff.id + ">");
+        linebuff.content = $("#line" + linebuff.id);
+        linebuff.content.append('#cursor');
+    },
+    blinkingCursor: function () {
+        if (this.cursor.text().substring(cont.text().length - 1, cont.text().length) == "|")
+            this.cursor.html(cont.html().substring(0, this.cursor.length - 1));
+        else
+            this.cursor.text(this.cursor.text() + "|");
+    },
+    scroll : function (time) {
+        window.scrollTo(0, time);
+    }
+
+}
+
 function blinkingCursor() {
     var cont = $("#cursor");
     if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|")
@@ -50,7 +94,8 @@ function writeHTML(str) {
     var $actualLine = $("#line" + lineNumber);
     $("#console").append("<br><text id=" + "line" + lineNumber + ">" + str + "</text>")
     lineNumber++;
-    window.scrollTo(0, 4000000);}
+    window.scrollTo(0, 4000000);
+}
 
 
 function prompt() {
@@ -65,7 +110,7 @@ function execute(str) {
     if (name == "") {
         name = $actualLine.text().split(":")[1];
         if (name == "")
-            name = "Petit Lapinou";
+            name = "Procrastination";
         binairies.welcome();
         subsytem.execute("help");
     }
