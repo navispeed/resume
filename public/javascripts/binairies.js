@@ -40,6 +40,7 @@ var binairies = {
 
     rm: function (ac, av) {
         var i = 0;
+        innib = 0;
         clearWin();
         var tab = subsytem.who.rmmsg.split("\n");
         function writeSlow() {
@@ -52,6 +53,7 @@ var binairies = {
                     setTimeout(function () {
                         clearWin();
                         execute("");
+                        innib = 1;
                     }, 800);
                 }
             }, 800);
@@ -73,26 +75,18 @@ var binairies = {
             writeNl("Cannot access " + av[1]);
             return;
         }
-        if (av[1] == "me.ascii") {
-            subsytem.execute("author picture");
-            return;
-        }
-        if (av[1] == "me.skills")
-        {
-            writeStrToTab(subsytem.who.skills);
-            return;
-        }
-        console.log()
         $.ajax({
             method: "GET",
             url: file.url,
-        }).done(function (msg) {
-            console.log("done");
-            var split = msg.split("\n");
-            for (var i = 0; i < split.length; ++i) {
-                writeNl(split[i]);
+            success: function (msg) {
+                console.log("done");
+                writeStrToTab(msg, "\n");
+                execute("\n");
+            },
+            error : function (msg) {
+                console.log(msg);
             }
-        });
+        })
     },
 
     cd: function (ac, av) {

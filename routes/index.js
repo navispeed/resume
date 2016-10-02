@@ -32,6 +32,25 @@ router.get('/who', function(req, res, next) {
   res.send(content);
 });
 
+router.get('/who/skills', function(req, res, next) {
+  var content;
+  console.log("h:", req.headers.host);
+  switch (req.headers.host) {
+    case "127.0.0.1:3000":
+      content = fs.readFileSync("public/profils/yohann.skills", "UTF-8");
+      break;
+    case "navispeed.eu":
+      content = fs.readFileSync("public/profils/greg.skills", "UTF-8");
+      break;
+    case "yohanncelerien.com":
+      content = fs.readFileSync("public/profils/yohann.skills", "UTF-8");
+      break;
+    default:
+      content = "{ \"status\": \"not found\", \"host\": " + req.headers.host + " }";
+  }
+  res.send(content);
+});
+
 router.get('/who/picture', function(req, res, next) {
   var content;
   console.log("h:", req.headers.host);
@@ -50,7 +69,6 @@ router.get('/who/picture', function(req, res, next) {
     default:
       content = "{ \"status\": \"not found\", \"host\": " + req.headers.host + " }";
   }
-
   res.send(content);
 });
 

@@ -85,7 +85,7 @@
             },
             {
               "name": "me.skills",
-              "url": "",
+              "url": "/who/skills",
               "permission:": 1
             }
           ]

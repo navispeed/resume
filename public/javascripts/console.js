@@ -22,8 +22,8 @@ function extracted() {
         cont.html(cont.html().substring(0, cont.length - 1));
 }
 
-function writeStrToTab(str) {
-    var tab = str.split("\n");
+function writeStrToTab(str, delim) {
+    var tab = str.split(delim);
     var i = 0;
     while (i != tab.length)
     {
@@ -72,7 +72,7 @@ function execute(str) {
     if (name == "") {
         name = $actualLine.text().split(":")[1];
         if (name == "")
-            name = "Procrastination";
+            name = "Procrastination ";
         binairies.welcome();
         subsytem.execute("help");
     }
