@@ -43,13 +43,13 @@ var binairies = {
         innib = 0;
         clearWin();
         var tab = subsytem.who.rmmsg.split("\n");
+
         function writeSlow() {
             setTimeout(function () {
-                writeHTML("<span class='dontDoIt'>" + tab[i++]+ "</span>");
+                writeHTML("<span class='dontDoIt'>" + tab[i++] + "</span>");
                 if (i < tab.length)
                     setTimeout(writeSlow, 800);
-                else
-                {
+                else {
                     setTimeout(function () {
                         clearWin();
                         execute("");
@@ -58,6 +58,7 @@ var binairies = {
                 }
             }, 800);
         }
+
         writeSlow();
     },
     clear: function (ac, av) {
@@ -79,11 +80,16 @@ var binairies = {
             method: "GET",
             url: file.url,
             success: function (msg) {
-                console.log("done");
+                execute("\n");
                 writeStrToTab(msg, "\n");
                 execute("\n");
             },
-            error : function (msg) {
+            error: function (msg) {
+                if (msg.status == 200) {
+                    execute("\n");
+                    writeStrToTab(msg.responseText, "\n");
+                    execute("\n");
+                }
                 console.log(msg);
             }
         })
@@ -127,20 +133,9 @@ var binairies = {
             setTimeout(showLine, 0);
         }
     }, author: function (ac, av) {
-        console.log("author");
-        if (ac == 1) {
-            writeNl("usage: ");
-            writeNl("author resume => show ascii resume ");
-            writeNl("author picture => show ascii picture ");
-            return;
-        }
-        switch (av[1]) {
-            case "resume":
-                writeNl("");
-                break;
-            case "picture":
-                binairies.picture();
-        }
+        writeNl("Hey, I'm " + subsytem.who.firstname + " " + subsytem.who.lastname);
+        writeNl("You can contact me by mail, just type sendmail at the prompt");
+
     },
 
     github: function (ac, av) {
@@ -157,14 +152,16 @@ var binairies = {
     },
 
     help: function (ac, av) {
-         writeNl("This is a list of available commands: ");
+        writeNl("This is a list of available commands: ");
         var binairieIn = subsytem.getBinairieIn("/bin");
         for (var i = 0; i < binairieIn.length; ++i) {
             writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);
         }
         write("");
+        write("Maybe you should start with the ls command");
         write("Don't forget you can clear the windows with Ctrl + L");
-        write("Enjoy :)");
+        writeHTML("<p>This work was done with me and my mate : " + subsytem.who.mate.firstname + " " + subsytem.who.mate.lastname
+            + ". You can see his resume at : " + subsytem.who.mate.url + "</p>");
     },
 
     env: function (ac, av) {

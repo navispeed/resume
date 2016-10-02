@@ -5,5 +5,12 @@
   "github": "https://github.com/grimaceplume",
   "linkedin": "https://www.linkedin.com/in/gr%C3%A9goire-gu%C3%A9mas-9865abaa?trk=nav_responsive_tab_profile_pic",
   "email": "gregoire.guemas@navispeed.eu",
-  "ascii": "greg.ascii"
+  "ascii": "greg.ascii",
+  "skills" : "greg.skills",
+  "experience" :"greg.experience",
+  "mate": {
+    "firstname": "Yohann",
+    "lastname": "Célérien",
+    "url": "http://yohanncelerien.com"
+  }
 }

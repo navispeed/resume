@@ -7,5 +7,10 @@
   "email": "contact@yohanncelerien.com",
   "ascii": "yohann.ascii",
   "skills" : "yohann.skills",
-  "experience" :"yohann.experience"
+  "experience" :"yohann.experience",
+  "mate": {
+    "firstname": "Grégoire",
+    "lastname": "GUEMAS",
+    "url": "http://navispeed.eu"
+  }
 }
