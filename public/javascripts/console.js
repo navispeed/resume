@@ -22,7 +22,7 @@ function extracted() {
         cont.html(cont.html().substring(0, cont.length - 1));
 }
 
-function write(str, color) {
+function write(str) {
     var $actualLine = $("#line" + lineNumber);
     extracted();
     if ($actualLine[0] == undefined) {
@@ -36,9 +36,8 @@ function write(str, color) {
     $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
 }
 
-function writeNl(str, color) {
+function writeNl(str) {
     extracted();
-    var $actualLine = $("#line" + lineNumber);
     $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
     $actualLine = $("#line" + (lineNumber));
     $actualLine.text(($actualLine.text() + str));
@@ -47,7 +46,6 @@ function writeNl(str, color) {
 }
 function writeHTML(str) {
     extracted();
-    var $actualLine = $("#line" + lineNumber);
     $("#console").append("<br><text id=" + "line" + lineNumber + ">" + str + "</text>")
     lineNumber++;
     window.scrollTo(0, 4000000);}

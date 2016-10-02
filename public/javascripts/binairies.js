@@ -41,11 +41,11 @@ var binairies = {
     rm: function (ac, av) {
         var i = 0;
         clearWin();
-        var split = subsytem.who.rmmsg.split("\n");
+        var tab = subsytem.who.rmmsg.split("\n");
         function writeSlow() {
             setTimeout(function () {
-                writeHTML("<span class='dontDoIt'>" + split[i++]+ "</span>");
-                if (i < split.length)
+                writeHTML("<span class='dontDoIt'>" + tab[i++]+ "</span>");
+                if (i < tab.length)
                     setTimeout(writeSlow, 800);
                 else
                 {

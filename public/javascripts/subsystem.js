@@ -106,18 +106,18 @@ var subsytem = {
         }
         $.ajax({
             method: "GET",
-            url: "/rmmsg.txt",
-        }).done(function (msg) {
-           subsytem.who.rmmsg = msg;
-        });
-        $.ajax({
-            method: "GET",
             url: "/who",
         }).done(function (msg) {
             console.log(msg);
             subsytem.who = msg;
             subsytem.env.push({name: "MAIL", value: msg.email}); //TODO add dynamic value
             downloadPicture(msg.ascii);
+        });
+        $.ajax({
+            method: "GET",
+            url: "/rmmsg.txt",
+        }).done(function (msg) {
+            subsytem.who.rmmsg = msg;
         });
     },
 
