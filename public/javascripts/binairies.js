@@ -77,7 +77,12 @@ var binairies = {
             subsytem.execute("author picture");
             return;
         }
-        console.log("file:", file);
+        if (av[1] == "me.skills")
+        {
+            writeStrToTab(subsytem.who.skills);
+            return;
+        }
+        console.log()
         $.ajax({
             method: "GET",
             url: file.url,
@@ -158,8 +163,7 @@ var binairies = {
     },
 
     help: function (ac, av) {
-        console.log("help", write);
-        writeNl("This is a list of available commands: ");
+         writeNl("This is a list of available commands: ");
         var binairieIn = subsytem.getBinairieIn("/bin");
         for (var i = 0; i < binairieIn.length; ++i) {
             writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);

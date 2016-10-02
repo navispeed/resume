@@ -17,7 +17,7 @@ router.get('/who', function(req, res, next) {
 
   switch (req.headers.host) {
     case "127.0.0.1:3000":
-      content = fs.readFileSync("public/profils/greg.json", "UTF-8");
+      content = fs.readFileSync("public/profils/yohann.json", "UTF-8");
       break;
     case "navispeed.eu":
       content = fs.readFileSync("public/profils/greg.json", "UTF-8");

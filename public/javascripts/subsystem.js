@@ -104,6 +104,16 @@ var subsytem = {
                 subsytem.who.picture = msg;
             });
         }
+
+        function dowloadSkills(name) {
+            $.ajax({
+
+                method: "GET",
+                url: "/profils/" + name,
+            }).done(function (msg) {
+                subsytem.who.skills = msg;
+            });
+        }
         $.ajax({
             method: "GET",
             url: "/who",
@@ -112,6 +122,7 @@ var subsytem = {
             subsytem.who = msg;
             subsytem.env.push({name: "MAIL", value: msg.email}); //TODO add dynamic value
             downloadPicture(msg.ascii);
+            dowloadSkills(msg.skills);
         });
         $.ajax({
             method: "GET",

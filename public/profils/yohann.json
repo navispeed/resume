@@ -6,14 +6,5 @@
   "linkedin": "https://fr.linkedin.com/in/yohann-celerien-0742b5a8",
   "email": "contact@yohanncelerien.com",
   "ascii": "yohann.ascii",
-  "skills": [
-    {
-      "name": "C language",
-      "project": ["42sh", "minishell"]
-    },
-    {
-      "name": "C language",
-      "project": ["42sh", "minishell"]
-    }
-  ]
+  "skills" : "yohann.skills"
 }

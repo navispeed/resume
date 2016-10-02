@@ -22,6 +22,15 @@ function extracted() {
         cont.html(cont.html().substring(0, cont.length - 1));
 }
 
+function writeStrToTab(str) {
+    var tab = str.split("\n");
+    var i = 0;
+    while (i != tab.length)
+    {
+        writeNl(tab[i]);
+        i++;
+    }
+}
 function write(str) {
     var $actualLine = $("#line" + lineNumber);
     extracted();
@@ -63,7 +72,7 @@ function execute(str) {
     if (name == "") {
         name = $actualLine.text().split(":")[1];
         if (name == "")
-            name = "Petit Lapinou";
+            name = "Procrastination";
         binairies.welcome();
         subsytem.execute("help");
     }
