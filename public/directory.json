@@ -89,8 +89,8 @@
               "permission:": 1
             },
             {
-              "name": "me.skills",
-              "url": "/who/skills",
+              "name": "me.experience",
+              "url": "/who/experience",
               "permission:": 1
             }
           ]

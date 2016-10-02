@@ -54,7 +54,6 @@ router.get('/who/skills', function(req, res, next) {
 router.get('/who/picture', function(req, res, next) {
   var content;
   console.log("h:", req.headers.host);
-  res.setHeader('Content-Type', 'application/json');
 
   switch (req.headers.host) {
     case "127.0.0.1:3000":
@@ -65,6 +64,27 @@ router.get('/who/picture', function(req, res, next) {
       break;
     case "yohanncelerien.com":
       content = fs.readFileSync("public/profils/yohann.ascii", "UTF-8");
+      break;
+    default:
+      content = "{ \"status\": \"not found\", \"host\": " + req.headers.host + " }";
+  }
+  res.send(content);
+});
+
+router.get('/who/experience', function(req, res, next) {
+  var content;
+  console.log("h:", req.headers.host);
+  res.setHeader('Content-Type', 'application/json');
+
+  switch (req.headers.host) {
+    case "127.0.0.1:3000":
+      content = fs.readFileSync("public/profils/greg.experience", "UTF-8");
+      break;
+    case "navispeed.eu":
+      content = fs.readFileSync("public/profils/greg.experience", "UTF-8");
+      break;
+    case "yohanncelerien.com":
+      content = fs.readFileSync("public/profils/yohann.experience", "UTF-8");
       break;
     default:
       content = "{ \"status\": \"not found\", \"host\": " + req.headers.host + " }";
