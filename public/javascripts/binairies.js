@@ -90,7 +90,6 @@ var binairies = {
                     writeStrToTab(msg.responseText, "\n");
                     execute("\n");
                 }
-                console.log(msg);
             }
         })
     },
