@@ -109,7 +109,6 @@ var subsytem = {
             method: "GET",
             url: "/who",
         }).done(function (msg) {
-            console.log(msg);
             subsytem.who = msg;
             subsytem.env.push({name: "MAIL", value: msg.email}); //TODO add dynamic value
             downloadPicture(msg.ascii);
@@ -186,4 +185,3 @@ var subsytem = {
     },
 };
 subsytem.init();
-console.log("Subsytem Loaded");

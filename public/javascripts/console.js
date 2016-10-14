@@ -25,8 +25,7 @@ function extracted() {
 function writeStrToTab(str, delim) {
     var tab = str.split(delim);
     var i = 0;
-    while (i != tab.length)
-    {
+    while (i != tab.length) {
         writeNl(tab[i]);
         i++;
     }
@@ -57,7 +56,8 @@ function writeHTML(str) {
     extracted();
     $("#console").append("<br><text id=" + "line" + lineNumber + ">" + str + "</text>")
     lineNumber++;
-    window.scrollTo(0, 4000000);}
+    window.scrollTo(0, 4000000);
+}
 
 
 function prompt() {
@@ -72,7 +72,7 @@ function execute(str) {
     if (name == "") {
         name = $actualLine.text().split(":")[1];
         if (name == "")
-            name = "Procrastination ";
+            name = "Procrastination";
         binairies.welcome();
         subsytem.execute("help");
     }
@@ -81,7 +81,7 @@ function execute(str) {
     prompt();
 }
 
-function backspace() { //TODO la faire marcher
+function backspace() {
     var actualLine = $("#line" + lineNumber);
     actualLine.text(actualLine.text().substring(0, actualLine.text().length - 1)); // remove it
     actualLine.html(actualLine.html() + "<span id='cursor'>|</span>");
@@ -123,7 +123,6 @@ function makeIntro() {
             window.scrollTo(0, 4000000);
             setTimeout(writeLine, 1);
         } else {
-            console.log("finish");
             $cursor.show();
             $line1.show();
             window.scrollTo(0, 4000000);
