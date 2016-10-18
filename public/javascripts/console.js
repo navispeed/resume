@@ -3,24 +3,10 @@
  */
 
 var lineNumber = 1;
-var name = "";
+var name = "TOTO";
 var innib = 0;
 var cl = [0, 0];
 var clRow = 0;
-
-function blinkingCursor() {
-    var cont = $("#cursor");
-    if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|")
-        cont.html(cont.html().substring(0, cont.length - 1));
-    else
-        cont.text(cont.text() + "|");
-}
-
-function extracted() {
-    var cont = $("#cursor");
-    if (cont.text().substring(cont.text().length - 1, cont.text().length) == "|")
-        cont.html(cont.html().substring(0, cont.length - 1));
-}
 
 function writeStrToTab(str, delim) {
     var tab = str.split(delim);
@@ -31,62 +17,36 @@ function writeStrToTab(str, delim) {
     }
 }
 function write(str) {
-    var $actualLine = $("#line" + lineNumber);
-    extracted();
-    if ($actualLine[0] == undefined) {
-        $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
-        $actualLine = $("#line" + (lineNumber));
-        $actualLine.text(($actualLine.text() + str));
-        lineNumber++;
-        return
-    }
-    $actualLine.text(($actualLine.text() + str));
-    $actualLine.html($actualLine.html() + "<span id='cursor'>|</span>");
+    $("#console").append(str);
 }
 
 function writeNl(str) {
-    extracted();
-    $("#console").append("<br><text id=" + "line" + lineNumber + "></text>")
-    $actualLine = $("#line" + (lineNumber));
-    $actualLine.text(($actualLine.text() + str));
-    lineNumber++;
-    window.scrollTo(0, 4000000);
+    $("#console").append("<br>" + str);
 }
 function writeHTML(str) {
-    extracted();
-    $("#console").append("<br><text id=" + "line" + lineNumber + ">" + str + "</text>")
-    lineNumber++;
-    window.scrollTo(0, 4000000);
+    $("#console").append(str);
 }
 
+function addInput() {
+    $("#console").append("<input id=" + "line" + lineNumber +">")
+    $("#line" + lineNumber).focus();
+    lineNumber++;
+}
 
 function prompt() {
-    $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<text id=" + "line" + lineNumber + "></text>")
+
+    $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<input id=" + "line" + lineNumber +">")
+    $("#line" + lineNumber).focus();
     write("");
     window.scrollTo(0, 4000000);
 }
+
 function execute(str) {
     var $actualLine = $("#line" + lineNumber);
     lineNumber++;
-    extracted();
-    if (name == "") {
-        name = $actualLine.text().split(":")[1];
-        if (name == "")
-            name = "Procrastination";
-        binairies.welcome();
-        subsytem.execute("help");
-    }
-    $actualLine.text(($actualLine.text() + str));
-    subsytem.execute($actualLine.text().replace("\r", ""));
+    subsytem.execute($actualLine.val());
     prompt();
 }
-
-function backspace() {
-    var actualLine = $("#line" + lineNumber);
-    actualLine.text(actualLine.text().substring(0, actualLine.text().length - 1)); // remove it
-    actualLine.html(actualLine.html() + "<span id='cursor'>|</span>");
-}
-
 
 function makeIntro() {
     $("#line0")[0].style.visibility = "visible";
@@ -127,6 +87,9 @@ function makeIntro() {
             $line1.show();
             window.scrollTo(0, 4000000);
             innib = 1;
+            binairies.welcome();
+            binairies.help();
+            prompt();
         }
 
     }
@@ -139,7 +102,7 @@ function clearWin(addNewLine) {
     var console = $("#console");
     console.html("");
     if (addNewLine == 0)
-        execute("");
+        prompt();
     cl = [0, 0];
 }
 
@@ -149,16 +112,12 @@ $(document).keydown(function (e) {
         cl[clRow] = e.which;
         if (cl[0] == 17 && cl[1] == 76)
             e.which = -1;
-        switch (e.which) { //TODO faire marcher ca avec autre chose que de l'azerty
-            case -1:
+        switch (e.which) {             case -1:
                 e.preventDefault();
                 clearWin(0);
                 break;
             case 13:
                 execute(String.fromCharCode(e.which));
-                break;
-            case 8:
-                backspace();
                 break;
             case 17:
                 break;
@@ -172,10 +131,7 @@ $(document).keydown(function (e) {
                 break;
             case 16:
                 break;
-            default:
-                write(String.fromCharCode(e.which).toLowerCase());
         }
     }
 });
-setInterval(blinkingCursor, 1000);
 window.onload = makeIntro;

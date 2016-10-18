@@ -46,14 +46,14 @@ var binairies = {
 
         function writeSlow() {
             setTimeout(function () {
-                writeHTML("<span class='dontDoIt'>" + tab[i++] + "</span>");
+                writeHTML("<br> <span class='dontDoIt'>" + tab[i++] + "</span>");
                 if (i < tab.length)
                     setTimeout(writeSlow, 800);
                 else {
                     setTimeout(function () {
                         clearWin();
-                        execute("");
                         innib = 1;
+                        prompt();
                     }, 800);
                 }
             }, 800);
@@ -100,6 +100,7 @@ var binairies = {
 
         if (file == undefined) {
             writeNl("Cannot find " + av[1]);
+            prompt();
         }
 
         if (file.content != undefined) {
@@ -112,6 +113,7 @@ var binairies = {
             }
         } else {
             writeNl("Cannot access " + av[1] + " : not a directory");
+            prompt();
         }
     },
     picture: function () {
@@ -159,7 +161,7 @@ var binairies = {
         write("");
         write("Maybe you should start with the ls command");
         write("Don't forget you can clear the windows with Ctrl + L");
-        writeHTML("<p>This work was done with me and my mate : " + subsytem.who.mate.firstname + " " + subsytem.who.mate.lastname
+        writeHTML("<p>This work was done by me and my mate : " + subsytem.who.mate.firstname + " " + subsytem.who.mate.lastname
             + ". You can see his resume at : " + subsytem.who.mate.url + "</p>");
     },
 
