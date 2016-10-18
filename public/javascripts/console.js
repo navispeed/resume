@@ -3,7 +3,7 @@
  */
 
 var lineNumber = 1;
-var name = "user";
+var name = "USER";
 var innib = 0;
 var cl = [0, 0];
 var clRow = 0;
@@ -24,7 +24,7 @@ function writeNl(str) {
     $("#console").append("<br>" + str);
 }
 function writeHTML(str) {
-    $("#console").append(str);
+    $("#console").append(str);l
 }
 
 function addInput() {
@@ -122,12 +122,6 @@ $(document).keydown(function (e) {
             case 17:
                 break;
             case 91:
-                break;
-            case 190:
-                write(".");
-                break;
-            case 191:
-                write("/");
                 break;
             case 16:
                 break;
