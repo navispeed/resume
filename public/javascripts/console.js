@@ -3,7 +3,7 @@
  */
 
 var lineNumber = 1;
-var name = "TOTO";
+var name = "user";
 var innib = 0;
 var cl = [0, 0];
 var clRow = 0;
@@ -37,7 +37,7 @@ function prompt() {
 
     $("#console").append("<br>" + "<span class='name'>" + name + "@DESKTOP-5VL27MA: </span>" + "<input id=" + "line" + lineNumber +">")
     $("#line" + lineNumber).focus();
-    write("");
+    $("#line" + (lineNumber - 1)).attr("readonly", true);
     window.scrollTo(0, 4000000);
 }
 
