@@ -42,3 +42,8 @@ input
 ::-webkit-scrollbar {
     display: none;
 }
+
+a:link {color: #ffffff; text-decoration: underline; }
+a:active {color: #ffffff; text-decoration: underline; }
+a:visited {color: #ffffff; text-decoration: underline; }
+a:hover {color: #ffffff; text-decoration: none; }

@@ -162,7 +162,7 @@ var binairies = {
         writeNl("Maybe you should start with the ls command");
         writeNl("Don't forget you can clear the windows with clear command");
         writeHTML("<p>This work was done by me and my mate : " + subsytem.who.mate.firstname + " " + subsytem.who.mate.lastname
-            + ". You can see his resume at : " + subsytem.who.mate.url + "</p>");
+            + ". You can see his resume > "  + "<a href='"+ subsytem.who.mate.url +"'>here</a> <" + "</p>");
     },
 
     env: function (ac, av) {
