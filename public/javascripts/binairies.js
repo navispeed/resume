@@ -81,13 +81,13 @@ var binairies = {
             url: file.url,
             success: function (msg) {
                 execute("\n");
-                writeStrToTab(msg, "\n");
+                writeTab(msg, "\n");
                 execute("\n");
             },
             error: function (msg) {
                 if (msg.status == 200) {
                     execute("\n");
-                    writeStrToTab(msg.responseText, "\n");
+                    writeTab(msg.responseText, "\n");
                     execute("\n");
                 }
             }
@@ -158,9 +158,9 @@ var binairies = {
         for (var i = 0; i < binairieIn.length; ++i) {
             writeNl("- " + binairieIn[i].name + " : " + binairieIn[i].desc);
         }
-        write("");
-        write("Maybe you should start with the ls command");
-        write("Don't forget you can clear the windows with Ctrl + L");
+        writeNl("");
+        writeNl("Maybe you should start with the ls command");
+        writeNl("Don't forget you can clear the windows with clear command");
         writeHTML("<p>This work was done by me and my mate : " + subsytem.who.mate.firstname + " " + subsytem.who.mate.lastname
             + ". You can see his resume at : " + subsytem.who.mate.url + "</p>");
     },

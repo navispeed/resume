@@ -8,7 +8,7 @@ var innib = 0;
 var cl = [0, 0];
 var clRow = 0;
 
-function writeStrToTab(str, delim) {
+function writeTab(str, delim) {
     var tab = str.split(delim);
     var i = 0;
     while (i != tab.length) {
@@ -24,7 +24,7 @@ function writeNl(str) {
     $("#console").append("<br>" + str);
 }
 function writeHTML(str) {
-    $("#console").append(str);l
+    $("#console").append(str);
 }
 
 function addInput() {
@@ -98,6 +98,7 @@ function makeIntro() {
     setTimeout(writeLine, 3000);
 }
 
+
 function clearWin(addNewLine) {
     var console = $("#console");
     console.html("");
@@ -118,12 +119,6 @@ $(document).keydown(function (e) {
                 break;
             case 13:
                 execute(String.fromCharCode(e.which));
-                break;
-            case 17:
-                break;
-            case 91:
-                break;
-            case 16:
                 break;
         }
     }

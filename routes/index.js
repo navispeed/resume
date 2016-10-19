@@ -42,7 +42,7 @@ router.get('/who', function(req, res, next) {
     case "navispeed.eu":
       content = fs.readFileSync("public/profils/greg.json", "UTF-8");
       break;
-    case "yohanncelerien.com":
+    case "yohanncelerien.com:443":
       content = fs.readFileSync("public/profils/yohann.json", "UTF-8");
       break;
     default:
@@ -62,7 +62,7 @@ router.get('/who/skills', function(req, res, next) {
     case "navispeed.eu":
       content = fs.readFileSync("public/profils/greg.skills", "UTF-8");
       break;
-    case "yohanncelerien.com":
+    case "yohanncelerien.com:443":
       content = fs.readFileSync("public/profils/yohann.skills", "UTF-8");
       break;
     default:
@@ -82,7 +82,7 @@ router.get('/who/picture', function(req, res, next) {
     case "navispeed.eu":
       content = fs.readFileSync("public/profils/greg.ascii", "UTF-8");
       break;
-    case "yohanncelerien.com":
+    case "yohanncelerien.com:443":
       content = fs.readFileSync("public/profils/yohann.ascii", "UTF-8");
       break;
     default:
@@ -103,7 +103,7 @@ router.get('/who/experience', function(req, res, next) {
     case "navispeed.eu":
       content = fs.readFileSync("public/profils/greg.experience", "UTF-8");
       break;
-    case "yohanncelerien.com":
+    case "yohanncelerien.com:443":
       content = fs.readFileSync("public/profils/yohann.experience", "UTF-8");
       break;
     default:
