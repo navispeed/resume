@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
   var content;
   content = fs.readFileSync("public/intro.txt", "UTF-8");
   var link = "";
+  cv = "http://cv.yohanncelerien.com";
   switch (req.headers.host) {
     case "navispeed.eu":
       link = "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ \
@@ -17,6 +18,7 @@ router.get('/', function(req, res, next) {
       ga('create', 'UA-85689868-1', 'auto'); \
       ga('send', 'pageview'); \
     ";
+      cv = "http://cv.navispeed.eu";
       break;
     case "yohanncelerien.com":
       link = "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  \
@@ -25,9 +27,10 @@ router.get('/', function(req, res, next) {
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');    \
       ga('create', 'UA-85942631-1', 'auto');                                                \
             ga('send', 'pageview');";
+      cv = "http://cv.yohanncelerien.com";
       break;
   }
-  res.render('index', {tab:content, analytics: link });
+  res.render('index', {tab:content, analytics: link, cv:cv });
 });
 
 router.get('/who', function(req, res, next) {

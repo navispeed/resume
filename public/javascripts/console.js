@@ -64,10 +64,10 @@ function makeIntro() {
     function writeBoot() {
         setTimeout(function () {
             LineIntro.html(LineIntro.html() + "<h3>Loading Linux Kernel</h3>");
-        }, 1000);
+        }, 700);
         setTimeout(function () {
             LineIntro.html(LineIntro.html() + "<h3>Booting into Linux</h3>");
-        }, 2000);
+        }, 1200);
 
     }
 
@@ -123,4 +123,3 @@ $(document).keydown(function (e) {
         }
     }
 });
-window.onload = makeIntro;

@@ -9,6 +9,12 @@ html(lang="en")
         script.
             #{analytics};
     body
+    ul
+    h2    Classic Paper Resume <<--------- My Resume --------->> Linux Command Line Terminal
+    li: a(id="cv" href=cv)
+        img(src='images/cv.jpg')
+    li: a(onclick="makeIntro()")
+        img(src='images/linux.jpg')
     div(class="console")
         div(id="console")
             p(id="line0" style='visibility:hidden')=tab
