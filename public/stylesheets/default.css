@@ -56,3 +56,10 @@ a:link {color: #ffffff; text-decoration: underline; }
 a:active {color: #ffffff; text-decoration: underline; }
 a:visited {color: #ffffff; text-decoration: underline; }
 a:hover {color: #ffffff; text-decoration: none; }
+
+img {
+    border: 0px solid black;
+}
+img:hover {
+    outline: 3px solid black;
+}

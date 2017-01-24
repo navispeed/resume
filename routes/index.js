@@ -115,5 +115,30 @@ router.get('/who/experience', function(req, res, next) {
   res.send(content);
 });
 
+router.get("/linux", function (req, res, next) {
+    let img = fs.readFileSync('public/images/linux_console.JPG');
+    res.writeHead(200, {'Content-Type': 'image/gif' });
+    res.end(img, 'binary');
+});
+
+router.get("/who/cv", function (req,res, next) {
+    var pdf;
+    switch (req.headers.host) {
+        case "127.0.0.1:3000":
+            pdf = fs.readFileSync("public/pdf/greg.pdf");
+            break;
+        case "navispeed.eu":
+            pdf = fs.readFileSync("public/pdf/greg.pdf");
+            break;
+        case "yohanncelerien.com:443":
+            pdf = fs.readFileSync("public/pdf/yohann.pdf");
+            break;
+        default:
+            pdf = "{ \"status\": \"not found\", \"host\": " + req.headers.host + " }";
+    }
+    res.writeHead(200, {'Content-Type': 'application/pdf' });
+    res.end(pdf, 'binary');
+});
+
 //console.log(request.headers.host);
 module.exports = router;

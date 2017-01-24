@@ -123,3 +123,14 @@ $(document).keydown(function (e) {
         }
     }
 });
+
+$(document).ready(function () {
+    let $showModal = $("#showModal");
+
+    $showModal.click();
+    $showModal.remove();
+    let $linux = $("#linux");
+    $linux.click(function () {
+        makeIntro();
+    });
+})

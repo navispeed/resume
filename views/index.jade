@@ -1,20 +1,16 @@
 doctype html
 html(lang="en")
     head
-        link(rel='stylesheet', href='/stylesheets/default.css')
         script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+        include bootsrap.html
+        link(rel='stylesheet', href='/stylesheets/default.css')
         script(src="/javascripts/subsystem.js")
         script(src="/javascripts/console.js")
         script(src="/javascripts/binairies.js")
         script.
             #{analytics};
     body
-    ul
-    h2    Classic Paper Resume <<--------- My Resume --------->> Linux Command Line Terminal
-    li: a(id="cv" href=cv)
-        img(src='images/cv.jpg')
-    li: a(onclick="makeIntro()")
-        img(src='images/linux.jpg')
     div(class="console")
         div(id="console")
             p(id="line0" style='visibility:hidden')=tab
+    include modal.html
