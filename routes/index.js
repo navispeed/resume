@@ -116,7 +116,7 @@ router.get('/who/experience', function(req, res, next) {
 });
 
 router.get("/linux", function (req, res, next) {
-    let img = fs.readFileSync('public/images/linux_console.JPG');
+    var img = fs.readFileSync('public/images/linux_console.JPG');
     res.writeHead(200, {'Content-Type': 'image/gif' });
     res.end(img, 'binary');
 });
