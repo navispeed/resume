@@ -70,6 +70,6 @@ This file contain a global object, named ```binairies```, and contain multiple m
  
  ## Disclaimer
  
- This project is not really responsible (you can use it on mobile at your own risk)
- This project contain bugs
- This project is a web project, so it will never end :) 
+* This project is not really responsible (you can use it on mobile at your own risk)
+* This project contain bugs
+* This project is a web project, so it will never end :) 
